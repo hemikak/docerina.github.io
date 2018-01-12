@@ -520,7 +520,11 @@
                             <span class="fw-struct sm-icon"></span>
                             public struct Cache
                         </h4>
-                        <p><span class="fw-right gray xs-icon"></span>Map which stores all of the caches.</p>
+                        
+                            <p>
+                                <span class="fw-right gray xs-icon"></span>Map which stores all of the caches.
+                            </p>
+                        
                         
                             <p>
                                 <label class="table-header-text">Fields:</label>
@@ -576,10 +580,11 @@
                                                 (  )
                                                 
                                             </h4>
-                                            <p>
-                                                <span class="fw-right gray xs-icon"></span>
-                                                Evicts the cache when cache is full.
-                                            </p>
+                                            
+                                                <p>
+                                                    <span class="fw-right gray xs-icon"></span>Evicts the cache when cache is full.
+                                                </p>
+                                            
                                             
                                             
                                         </li>
@@ -594,10 +599,11 @@
                                                 ( any )
                                                 
                                             </h4>
-                                            <p>
-                                                <span class="fw-right gray xs-icon"></span>
-                                                Returns the cached value associated with the given key. Returns null if the provided key does not exist in the cache.
-                                            </p>
+                                            
+                                                <p>
+                                                    <span class="fw-right gray xs-icon"></span>Returns the cached value associated with the given key. Returns null if the provided key does not exist in the cache.
+                                                </p>
+                                            
                                             
                                                 <p>
                                                     <label class="table-header-text">Parameters:</label>
@@ -647,10 +653,11 @@
                                                 ( string[] )
                                                 
                                             </h4>
-                                            <p>
-                                                <span class="fw-right gray xs-icon"></span>
-                                                Returns the key of the Least Recently Used cache entry. This is used to remove cache entries if the cache is full.
-                                            </p>
+                                            
+                                                <p>
+                                                    <span class="fw-right gray xs-icon"></span>Returns the key of the Least Recently Used cache entry. This is used to remove cache entries if the cache is full.
+                                                </p>
+                                            
                                             
                                                 <p>
                                                     <label class="table-header-text">Parameters:</label>
@@ -698,10 +705,11 @@
                                                 ( string key , any value )
                                                 
                                             </h4>
-                                            <p>
-                                                <span class="fw-right gray xs-icon"></span>
-                                                Adds the given key, value pair to the provided cache.
-                                            </p>
+                                            
+                                                <p>
+                                                    <span class="fw-right gray xs-icon"></span>Adds the given key, value pair to the provided cache.
+                                                </p>
+                                            
                                             
                                                 <p>
                                                     <label class="table-header-text">Parameters:</label>
@@ -738,10 +746,11 @@
                                                 ( string key )
                                                 
                                             </h4>
-                                            <p>
-                                                <span class="fw-right gray xs-icon"></span>
-                                                Removes a cached value from a cache.
-                                            </p>
+                                            
+                                                <p>
+                                                    <span class="fw-right gray xs-icon"></span>Removes a cached value from a cache.
+                                                </p>
+                                            
                                             
                                                 <p>
                                                     <label class="table-header-text">Parameters:</label>
@@ -774,10 +783,11 @@
                                                 ( int )
                                                 
                                             </h4>
-                                            <p>
-                                                <span class="fw-right gray xs-icon"></span>
-                                                Returns the size of the cache.
-                                            </p>
+                                            
+                                                <p>
+                                                    <span class="fw-right gray xs-icon"></span>Returns the size of the cache.
+                                                </p>
+                                            
                                             
                                             
                                                 <label class="table-header-text">Return Parameters:</label>
@@ -820,7 +830,11 @@
                             <span class="fw-struct sm-icon"></span>
                             public struct CacheEntry
                         </h4>
-                        <p><span class="fw-right gray xs-icon"></span>Represents a cache entry</p>
+                        
+                            <p>
+                                <span class="fw-right gray xs-icon"></span>Represents a cache entry
+                            </p>
+                        
                         
                             <p>
                                 <label class="table-header-text">Fields:</label>
@@ -865,9 +879,7 @@
                             ( int numberOfKeysToEvict , string[] cacheKeys , int[] timestamps , string key , int lastAccessTime )
                             
                         </h4>
-                        <p>
-                            <span class="fw-right gray xs-icon"></span>
-                        </p>
+                        
                         
                             <p>
                                 <label class="table-header-text">Parameters:</label>
@@ -934,9 +946,11 @@
                             ( Cache )
                             
                         </h4>
-                        <p>
-                            <span class="fw-right gray xs-icon"></span>Creates a new cache.
-                        </p>
+                        
+                            <p>
+                                <span class="fw-right gray xs-icon"></span>Creates a new cache.
+                            </p>
+                        
                         
                             <p>
                                 <label class="table-header-text">Parameters:</label>
@@ -997,9 +1011,11 @@
                             ( string )
                             
                         </h4>
-                        <p>
-                            <span class="fw-right gray xs-icon"></span>Creates a new cache cleanup task.
-                        </p>
+                        
+                            <p>
+                                <span class="fw-right gray xs-icon"></span>Creates a new cache cleanup task.
+                            </p>
+                        
                         
                         
                     
@@ -1024,9 +1040,11 @@
                             ( error )
                             
                         </h4>
-                        <p>
-                            <span class="fw-right gray xs-icon"></span>Removes expired cache entries from all caches.
-                        </p>
+                        
+                            <p>
+                                <span class="fw-right gray xs-icon"></span>Removes expired cache entries from all caches.
+                            </p>
+                        
                         
                         
                     
@@ -1055,7 +1073,7 @@
                     
                         <h4 id="CACHE_CLEANUP_START_DELAY">
                             <span class="fw-globe sm-icon"></span>
-                            public annotation CACHE_CLEANUP_START_DELAY
+                            CACHE_CLEANUP_START_DELAY
                         </h4>
                         <table>
                             <tr>
@@ -1085,7 +1103,7 @@
                     
                         <h4 id="CACHE_CLEANUP_INTERVAL">
                             <span class="fw-globe sm-icon"></span>
-                            public annotation CACHE_CLEANUP_INTERVAL
+                            CACHE_CLEANUP_INTERVAL
                         </h4>
                         <table>
                             <tr>
@@ -1115,7 +1133,7 @@
                     
                         <h4 id="cacheMap">
                             <span class="fw-globe sm-icon"></span>
-                            public annotation cacheMap
+                            cacheMap
                         </h4>
                         <table>
                             <tr>
@@ -1145,7 +1163,7 @@
                     
                         <h4 id="cacheCleanupTaskID">
                             <span class="fw-globe sm-icon"></span>
-                            public annotation cacheCleanupTaskID
+                            cacheCleanupTaskID
                         </h4>
                         <table>
                             <tr>
