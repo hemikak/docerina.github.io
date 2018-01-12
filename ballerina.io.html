@@ -8,11 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="docerina-theme/libs/bootstrap-3.0.0/css/bootstrap.min.css">
 
-    <!-- custom CSS -->
-    <link rel="stylesheet" href="docerina-theme/css/main.css">
-
     <!-- Ballerina font CSS -->
     <link rel="stylesheet" href="docerina-theme/css/font-ballerina/css/font-ballerina.css">
+
+    <!-- Roboto font CSS -->
+    <link rel="stylesheet" href="docerina-theme/css/roboto.css">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="docerina-theme/css/main.css">
 
     <!--Jquery JS-->
     <script src="docerina-theme/js/jquery.min.js"></script>
@@ -513,646 +516,652 @@
                     <span class="bold">ballerina.io</span> package
                 </h3>
                 
-                    <!-- Function -->
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                        <h4 id="ByteChannel">
-                            <span class="fw-struct sm-icon"></span>
-                            public struct ByteChannel
-                        </h4>
+                    <div class="construct-wrapper">
+                        <!-- Function -->
                         
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Ballerina ByteChannel represents a channel which will allow I/O operations to be done
-                            </p>
+                        <!-- Struct-binded functions grouped together -->
                         
+                            <h4 id="ByteChannel">
+                                <span class="fw-struct sm-icon"></span>
+                                public struct ByteChannel
+                            </h4>
+                            
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Ballerina ByteChannel represents a channel which will allow I/O operations to be done
+                                </p>
+                            
+                            
+                            
+                                <div class="function-wrapper">
+                                    <ul>
+                                        
+                                            <li>
+                                                <h4 id="close">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; ByteChannel &gt;</span>
+                                                    close
+                                                    (  )
+                                                    
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Function to close a byte channel
+                                                    </p>
+                                                
+                                                
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <h4 id="readAllBytes">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; ByteChannel &gt;</span>
+                                                    readAllBytes
+                                                    (  )
+                                                    
+                                                    ( blob , int )
+                                                    
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Function to read all bytes in the given I/O source
+                                                    </p>
+                                                
+                                                
+                                                
+                                                    <label class="table-header-text">Return Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Return Variable</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4"></td>
+                                                                <td class="col-md-2">blob</td>
+                                                                <td class="col-md-6"></td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4"></td>
+                                                                <td class="col-md-2">int</td>
+                                                                <td class="col-md-6"></td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <h4 id="readBytes">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; ByteChannel &gt;</span>
+                                                    readBytes
+                                                    ( int numberOfBytes )
+                                                    
+                                                    ( blob , int )
+                                                    
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Function to read bytes
+                                                    </p>
+                                                
+                                                
+                                                    <p>
+                                                        <label class="table-header-text">Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Parameter Name</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4">numberOfBytes</td>
+                                                                <td class="col-md-2">int</td>
+                                                                <td class="col-md-6">Number of bytes which should be read</td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                                
+                                                    <label class="table-header-text">Return Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Return Variable</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4"></td>
+                                                                <td class="col-md-2">blob</td>
+                                                                <td class="col-md-6"></td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4"></td>
+                                                                <td class="col-md-2">int</td>
+                                                                <td class="col-md-6"></td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <h4 id="toCharacterChannel">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; ByteChannel &gt;</span>
+                                                    toCharacterChannel
+                                                    ( string encoding )
+                                                    
+                                                    ( CharacterChannel )
+                                                    
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Function to convert a ByteChannel to CharacterChannel
+                                                    </p>
+                                                
+                                                
+                                                    <p>
+                                                        <label class="table-header-text">Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Parameter Name</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4">encoding</td>
+                                                                <td class="col-md-2">string</td>
+                                                                <td class="col-md-6">The charset/encoding of the content (i.e UTF-8, ASCII)</td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                                
+                                                    <label class="table-header-text">Return Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Return Variable</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4"></td>
+                                                                <td class="col-md-2">CharacterChannel</td>
+                                                                <td class="col-md-6"></td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <h4 id="writeBytes">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; ByteChannel &gt;</span>
+                                                    writeBytes
+                                                    ( blob content , int startOffset )
+                                                    
+                                                    ( int )
+                                                    
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Function to write bytes
+                                                    </p>
+                                                
+                                                
+                                                    <p>
+                                                        <label class="table-header-text">Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Parameter Name</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4">content</td>
+                                                                <td class="col-md-2">blob</td>
+                                                                <td class="col-md-6">Bytes which should be written</td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4">startOffset</td>
+                                                                <td class="col-md-2">int</td>
+                                                                <td class="col-md-6">If the bytes need to be written with an offset, the value of that offset</td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                                
+                                                    <label class="table-header-text">Return Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Return Variable</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4"></td>
+                                                                <td class="col-md-2">int</td>
+                                                                <td class="col-md-6"></td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                            </li>
+                                        
+                                    </ul>
+                                </div>
+                            
                         
+                        <!-- Connectors and its actions -->
                         
-                            <div class="function-wrapper">
-                                <ul>
-                                    
-                                        <li>
-                                            <h4 id="close">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; ByteChannel &gt;</span>
-                                                close
-                                                (  )
-                                                
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Function to close a byte channel
-                                                </p>
-                                            
-                                            
-                                            
-                                        </li>
-                                    
-                                        <li>
-                                            <h4 id="readAllBytes">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; ByteChannel &gt;</span>
-                                                readAllBytes
-                                                (  )
-                                                
-                                                ( blob , int )
-                                                
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Function to read all bytes in the given I/O source
-                                                </p>
-                                            
-                                            
-                                            
-                                                <label class="table-header-text">Return Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Return Variable</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4"></td>
-                                                            <td class="col-md-2">blob</td>
-                                                            <td class="col-md-6"></td>
-                                                        </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4"></td>
-                                                            <td class="col-md-2">int</td>
-                                                            <td class="col-md-6"></td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                        </li>
-                                    
-                                        <li>
-                                            <h4 id="readBytes">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; ByteChannel &gt;</span>
-                                                readBytes
-                                                ( int numberOfBytes )
-                                                
-                                                ( blob , int )
-                                                
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Function to read bytes
-                                                </p>
-                                            
-                                            
-                                                <p>
-                                                    <label class="table-header-text">Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Parameter Name</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4">numberOfBytes</td>
-                                                            <td class="col-md-2">int</td>
-                                                            <td class="col-md-6">Number of bytes which should be read</td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                            
-                                                <label class="table-header-text">Return Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Return Variable</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4"></td>
-                                                            <td class="col-md-2">blob</td>
-                                                            <td class="col-md-6"></td>
-                                                        </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4"></td>
-                                                            <td class="col-md-2">int</td>
-                                                            <td class="col-md-6"></td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                        </li>
-                                    
-                                        <li>
-                                            <h4 id="toCharacterChannel">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; ByteChannel &gt;</span>
-                                                toCharacterChannel
-                                                ( string encoding )
-                                                
-                                                ( CharacterChannel )
-                                                
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Function to convert a ByteChannel to CharacterChannel
-                                                </p>
-                                            
-                                            
-                                                <p>
-                                                    <label class="table-header-text">Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Parameter Name</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4">encoding</td>
-                                                            <td class="col-md-2">string</td>
-                                                            <td class="col-md-6">The charset/encoding of the content (i.e UTF-8, ASCII)</td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                            
-                                                <label class="table-header-text">Return Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Return Variable</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4"></td>
-                                                            <td class="col-md-2">CharacterChannel</td>
-                                                            <td class="col-md-6"></td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                        </li>
-                                    
-                                        <li>
-                                            <h4 id="writeBytes">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; ByteChannel &gt;</span>
-                                                writeBytes
-                                                ( blob content , int startOffset )
-                                                
-                                                ( int )
-                                                
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Function to write bytes
-                                                </p>
-                                            
-                                            
-                                                <p>
-                                                    <label class="table-header-text">Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Parameter Name</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4">content</td>
-                                                            <td class="col-md-2">blob</td>
-                                                            <td class="col-md-6">Bytes which should be written</td>
-                                                        </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4">startOffset</td>
-                                                            <td class="col-md-2">int</td>
-                                                            <td class="col-md-6">If the bytes need to be written with an offset, the value of that offset</td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                            
-                                                <label class="table-header-text">Return Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Return Variable</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4"></td>
-                                                            <td class="col-md-2">int</td>
-                                                            <td class="col-md-6"></td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                        </li>
-                                    
-                                </ul>
-                            </div>
+                        <!-- Enums-->
                         
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
                 
-                    <!-- Function -->
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                        <h4 id="CharacterChannel">
-                            <span class="fw-struct sm-icon"></span>
-                            public struct CharacterChannel
-                        </h4>
+                    <div class="construct-wrapper">
+                        <!-- Function -->
                         
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Ballerina CharacterChannel represents a channel which will allow to read/write characters
-                            </p>
+                        <!-- Struct-binded functions grouped together -->
                         
+                            <h4 id="CharacterChannel">
+                                <span class="fw-struct sm-icon"></span>
+                                public struct CharacterChannel
+                            </h4>
+                            
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Ballerina CharacterChannel represents a channel which will allow to read/write characters
+                                </p>
+                            
+                            
+                            
+                                <div class="function-wrapper">
+                                    <ul>
+                                        
+                                            <li>
+                                                <h4 id="closeCharacterChannel">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; CharacterChannel &gt;</span>
+                                                    closeCharacterChannel
+                                                    (  )
+                                                    
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Function to close a character channel
+                                                    </p>
+                                                
+                                                
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <h4 id="readAllCharacters">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; CharacterChannel &gt;</span>
+                                                    readAllCharacters
+                                                    (  )
+                                                    
+                                                    ( string )
+                                                    
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Function to read all characters in the give I/O source
+                                                    </p>
+                                                
+                                                
+                                                
+                                                    <label class="table-header-text">Return Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Return Variable</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4"></td>
+                                                                <td class="col-md-2">string</td>
+                                                                <td class="col-md-6"></td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <h4 id="readCharacters">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; CharacterChannel &gt;</span>
+                                                    readCharacters
+                                                    ( int numberOfChars )
+                                                    
+                                                    ( string )
+                                                    
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Function to read characters
+                                                    </p>
+                                                
+                                                
+                                                    <p>
+                                                        <label class="table-header-text">Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Parameter Name</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4">numberOfChars</td>
+                                                                <td class="col-md-2">int</td>
+                                                                <td class="col-md-6">Number of characters which should be read</td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                                
+                                                    <label class="table-header-text">Return Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Return Variable</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4"></td>
+                                                                <td class="col-md-2">string</td>
+                                                                <td class="col-md-6"></td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <h4 id="toTextRecordChannel">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; CharacterChannel &gt;</span>
+                                                    toTextRecordChannel
+                                                    ( string recordSeparator , string fieldSeparator )
+                                                    
+                                                    ( TextRecordChannel )
+                                                    
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Function to convert a CharacterChannel to TextRecordChannel
+                                                    </p>
+                                                
+                                                
+                                                    <p>
+                                                        <label class="table-header-text">Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Parameter Name</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4">recordSeparator</td>
+                                                                <td class="col-md-2">string</td>
+                                                                <td class="col-md-6">Terminating expression to distinguish between records</td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4">fieldSeparator</td>
+                                                                <td class="col-md-2">string</td>
+                                                                <td class="col-md-6">Terminating expression to distinguish between fields</td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                                
+                                                    <label class="table-header-text">Return Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Return Variable</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4"></td>
+                                                                <td class="col-md-2">TextRecordChannel</td>
+                                                                <td class="col-md-6"></td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <h4 id="writeCharacters">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; CharacterChannel &gt;</span>
+                                                    writeCharacters
+                                                    ( string content , int startOffset )
+                                                    
+                                                    ( int )
+                                                    
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Function to write characters
+                                                    </p>
+                                                
+                                                
+                                                    <p>
+                                                        <label class="table-header-text">Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Parameter Name</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4">content</td>
+                                                                <td class="col-md-2">string</td>
+                                                                <td class="col-md-6">Text content which should be written</td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4">startOffset</td>
+                                                                <td class="col-md-2">int</td>
+                                                                <td class="col-md-6">If the content needs to be written with an offset, the value of that offset</td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                                
+                                                    <label class="table-header-text">Return Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Return Variable</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4"></td>
+                                                                <td class="col-md-2">int</td>
+                                                                <td class="col-md-6"></td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                            </li>
+                                        
+                                    </ul>
+                                </div>
+                            
                         
+                        <!-- Connectors and its actions -->
                         
-                            <div class="function-wrapper">
-                                <ul>
-                                    
-                                        <li>
-                                            <h4 id="closeCharacterChannel">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; CharacterChannel &gt;</span>
-                                                closeCharacterChannel
-                                                (  )
-                                                
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Function to close a character channel
-                                                </p>
-                                            
-                                            
-                                            
-                                        </li>
-                                    
-                                        <li>
-                                            <h4 id="readAllCharacters">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; CharacterChannel &gt;</span>
-                                                readAllCharacters
-                                                (  )
-                                                
-                                                ( string )
-                                                
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Function to read all characters in the give I/O source
-                                                </p>
-                                            
-                                            
-                                            
-                                                <label class="table-header-text">Return Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Return Variable</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4"></td>
-                                                            <td class="col-md-2">string</td>
-                                                            <td class="col-md-6"></td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                        </li>
-                                    
-                                        <li>
-                                            <h4 id="readCharacters">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; CharacterChannel &gt;</span>
-                                                readCharacters
-                                                ( int numberOfChars )
-                                                
-                                                ( string )
-                                                
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Function to read characters
-                                                </p>
-                                            
-                                            
-                                                <p>
-                                                    <label class="table-header-text">Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Parameter Name</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4">numberOfChars</td>
-                                                            <td class="col-md-2">int</td>
-                                                            <td class="col-md-6">Number of characters which should be read</td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                            
-                                                <label class="table-header-text">Return Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Return Variable</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4"></td>
-                                                            <td class="col-md-2">string</td>
-                                                            <td class="col-md-6"></td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                        </li>
-                                    
-                                        <li>
-                                            <h4 id="toTextRecordChannel">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; CharacterChannel &gt;</span>
-                                                toTextRecordChannel
-                                                ( string recordSeparator , string fieldSeparator )
-                                                
-                                                ( TextRecordChannel )
-                                                
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Function to convert a CharacterChannel to TextRecordChannel
-                                                </p>
-                                            
-                                            
-                                                <p>
-                                                    <label class="table-header-text">Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Parameter Name</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4">recordSeparator</td>
-                                                            <td class="col-md-2">string</td>
-                                                            <td class="col-md-6">Terminating expression to distinguish between records</td>
-                                                        </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4">fieldSeparator</td>
-                                                            <td class="col-md-2">string</td>
-                                                            <td class="col-md-6">Terminating expression to distinguish between fields</td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                            
-                                                <label class="table-header-text">Return Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Return Variable</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4"></td>
-                                                            <td class="col-md-2">TextRecordChannel</td>
-                                                            <td class="col-md-6"></td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                        </li>
-                                    
-                                        <li>
-                                            <h4 id="writeCharacters">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; CharacterChannel &gt;</span>
-                                                writeCharacters
-                                                ( string content , int startOffset )
-                                                
-                                                ( int )
-                                                
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Function to write characters
-                                                </p>
-                                            
-                                            
-                                                <p>
-                                                    <label class="table-header-text">Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Parameter Name</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4">content</td>
-                                                            <td class="col-md-2">string</td>
-                                                            <td class="col-md-6">Text content which should be written</td>
-                                                        </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4">startOffset</td>
-                                                            <td class="col-md-2">int</td>
-                                                            <td class="col-md-6">If the content needs to be written with an offset, the value of that offset</td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                            
-                                                <label class="table-header-text">Return Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Return Variable</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4"></td>
-                                                            <td class="col-md-2">int</td>
-                                                            <td class="col-md-6"></td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                        </li>
-                                    
-                                </ul>
-                            </div>
+                        <!-- Enums-->
                         
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
                 
-                    <!-- Function -->
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                        <h4 id="TextRecordChannel">
-                            <span class="fw-struct sm-icon"></span>
-                            public struct TextRecordChannel
-                        </h4>
+                    <div class="construct-wrapper">
+                        <!-- Function -->
                         
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Ballerina TextRecordChannel represents a channel which will allow to read/write text records
-                            </p>
+                        <!-- Struct-binded functions grouped together -->
                         
-                        
-                        
-                            <div class="function-wrapper">
-                                <ul>
-                                    
-                                        <li>
-                                            <h4 id="closeTextRecordChannel">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; TextRecordChannel &gt;</span>
-                                                closeTextRecordChannel
-                                                (  )
-                                                
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Function to close the text record channel
-                                                </p>
-                                            
-                                            
-                                            
-                                        </li>
-                                    
-                                        <li>
-                                            <h4 id="readTextRecord">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; TextRecordChannel &gt;</span>
-                                                readTextRecord
-                                                (  )
-                                                
-                                                ( string[] )
-                                                
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Function to read text records
-                                                </p>
-                                            
-                                            
-                                            
-                                                <label class="table-header-text">Return Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Return Variable</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
+                            <h4 id="TextRecordChannel">
+                                <span class="fw-struct sm-icon"></span>
+                                public struct TextRecordChannel
+                            </h4>
+                            
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Ballerina TextRecordChannel represents a channel which will allow to read/write text records
+                                </p>
+                            
+                            
+                            
+                                <div class="function-wrapper">
+                                    <ul>
+                                        
+                                            <li>
+                                                <h4 id="closeTextRecordChannel">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; TextRecordChannel &gt;</span>
+                                                    closeTextRecordChannel
+                                                    (  )
                                                     
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Function to close the text record channel
+                                                    </p>
+                                                
+                                                
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <h4 id="readTextRecord">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; TextRecordChannel &gt;</span>
+                                                    readTextRecord
+                                                    (  )
+                                                    
+                                                    ( string[] )
+                                                    
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Function to read text records
+                                                    </p>
+                                                
+                                                
+                                                
+                                                    <label class="table-header-text">Return Parameters:</label>
+                                                    <table>
                                                         <tr>
-                                                            <td class="col-md-4"></td>
-                                                            <td class="col-md-2">string[]</td>
-                                                            <td class="col-md-6"></td>
+                                                            <th class="col-md-4">Return Variable</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
                                                         </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                        </li>
-                                    
-                                        <li>
-                                            <h4 id="writeTextRecord">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; TextRecordChannel &gt;</span>
-                                                writeTextRecord
-                                                ( string[] records )
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4"></td>
+                                                                <td class="col-md-2">string[]</td>
+                                                                <td class="col-md-6"></td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
                                                 
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Function to write text records
-                                                </p>
-                                            
-                                            
-                                                <p>
-                                                    <label class="table-header-text">Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Parameter Name</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
+                                            </li>
+                                        
+                                            <li>
+                                                <h4 id="writeTextRecord">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; TextRecordChannel &gt;</span>
+                                                    writeTextRecord
+                                                    ( string[] records )
                                                     
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Function to write text records
+                                                    </p>
+                                                
+                                                
+                                                    <p>
+                                                        <label class="table-header-text">Parameters:</label>
+                                                    <table>
                                                         <tr>
-                                                            <td class="col-md-4">records</td>
-                                                            <td class="col-md-2">string[]</td>
-                                                            <td class="col-md-6">Fields which are included in the record</td>
+                                                            <th class="col-md-4">Parameter Name</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
                                                         </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                            
-                                        </li>
-                                    
-                                </ul>
-                            </div>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4">records</td>
+                                                                <td class="col-md-2">string[]</td>
+                                                                <td class="col-md-6">Fields which are included in the record</td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                                
+                                            </li>
+                                        
+                                    </ul>
+                                </div>
+                            
                         
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
+                        <!-- Connectors and its actions -->
+                        
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
                 
             </div>
         </div>

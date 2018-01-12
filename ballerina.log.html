@@ -8,11 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="docerina-theme/libs/bootstrap-3.0.0/css/bootstrap.min.css">
 
-    <!-- custom CSS -->
-    <link rel="stylesheet" href="docerina-theme/css/main.css">
-
     <!-- Ballerina font CSS -->
     <link rel="stylesheet" href="docerina-theme/css/font-ballerina/css/font-ballerina.css">
+
+    <!-- Roboto font CSS -->
+    <link rel="stylesheet" href="docerina-theme/css/roboto.css">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="docerina-theme/css/main.css">
 
     <!--Jquery JS-->
     <script src="docerina-theme/js/jquery.min.js"></script>
@@ -360,281 +363,293 @@
                     <span class="bold">ballerina.log</span> package
                 </h3>
                 
-                    <!-- Function -->
-                    
-                        <h4 id="printDebug">
-                            <span class="fw-function sm-icon"> </span>
-                            public function printDebug
-                            ( string msg )
+                    <div class="construct-wrapper">
+                        <!-- Function -->
+                        
+                            <h4 id="printDebug">
+                                <span class="fw-function sm-icon"> </span>
+                                public function printDebug
+                                ( string msg )
+                                
+                            </h4>
                             
-                        </h4>
-                        
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Logs the specified value at DEBUG level.
-                            </p>
-                        
-                        
-                            <p>
-                                <label class="table-header-text">Parameters:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Parameter Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
-                                
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Logs the specified value at DEBUG level.
+                                </p>
+                            
+                            
+                                <p>
+                                    <label class="table-header-text">Parameters:</label>
+                                <table>
                                     <tr>
-                                        <td class="col-md-4">msg</td>
-                                        <td class="col-md-2">string</td>
-                                        <td class="col-md-6">The message to be logged</td>
+                                        <th class="col-md-4">Parameter Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
                                     </tr>
-                                
-                            </table>
-                            </p>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">msg</td>
+                                            <td class="col-md-2">string</td>
+                                            <td class="col-md-6">The message to be logged</td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                            
                         
+                        <!-- Struct-binded functions grouped together -->
                         
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
+                        <!-- Connectors and its actions -->
+                        
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
                 
-                    <!-- Function -->
-                    
-                        <h4 id="printError">
-                            <span class="fw-function sm-icon"> </span>
-                            public function printError
-                            ( string msg )
+                    <div class="construct-wrapper">
+                        <!-- Function -->
+                        
+                            <h4 id="printError">
+                                <span class="fw-function sm-icon"> </span>
+                                public function printError
+                                ( string msg )
+                                
+                            </h4>
                             
-                        </h4>
-                        
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Logs the specified message at ERROR level.
-                            </p>
-                        
-                        
-                            <p>
-                                <label class="table-header-text">Parameters:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Parameter Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
-                                
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Logs the specified message at ERROR level.
+                                </p>
+                            
+                            
+                                <p>
+                                    <label class="table-header-text">Parameters:</label>
+                                <table>
                                     <tr>
-                                        <td class="col-md-4">msg</td>
-                                        <td class="col-md-2">string</td>
-                                        <td class="col-md-6">The message to be logged</td>
+                                        <th class="col-md-4">Parameter Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
                                     </tr>
-                                
-                            </table>
-                            </p>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">msg</td>
+                                            <td class="col-md-2">string</td>
+                                            <td class="col-md-6">The message to be logged</td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                            
                         
+                        <!-- Struct-binded functions grouped together -->
                         
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
+                        <!-- Connectors and its actions -->
+                        
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
                 
-                    <!-- Function -->
-                    
-                        <h4 id="printErrorCause">
-                            <span class="fw-function sm-icon"> </span>
-                            public function printErrorCause
-                            ( string msg , error err )
+                    <div class="construct-wrapper">
+                        <!-- Function -->
+                        
+                            <h4 id="printErrorCause">
+                                <span class="fw-function sm-icon"> </span>
+                                public function printErrorCause
+                                ( string msg , error err )
+                                
+                            </h4>
                             
-                        </h4>
-                        
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Logs the specified message at ERROR level, along with an accompanying error.
-                            </p>
-                        
-                        
-                            <p>
-                                <label class="table-header-text">Parameters:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Parameter Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
-                                
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Logs the specified message at ERROR level, along with an accompanying error.
+                                </p>
+                            
+                            
+                                <p>
+                                    <label class="table-header-text">Parameters:</label>
+                                <table>
                                     <tr>
-                                        <td class="col-md-4">msg</td>
-                                        <td class="col-md-2">string</td>
-                                        <td class="col-md-6">The message to be logged.</td>
+                                        <th class="col-md-4">Parameter Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
                                     </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">err</td>
-                                        <td class="col-md-2">error</td>
-                                        <td class="col-md-6">The error struct to be logged</td>
-                                    </tr>
-                                
-                            </table>
-                            </p>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">msg</td>
+                                            <td class="col-md-2">string</td>
+                                            <td class="col-md-6">The message to be logged.</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">err</td>
+                                            <td class="col-md-2">error</td>
+                                            <td class="col-md-6">The error struct to be logged</td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                            
                         
+                        <!-- Struct-binded functions grouped together -->
                         
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
+                        <!-- Connectors and its actions -->
+                        
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
                 
-                    <!-- Function -->
-                    
-                        <h4 id="printInfo">
-                            <span class="fw-function sm-icon"> </span>
-                            public function printInfo
-                            ( string msg )
+                    <div class="construct-wrapper">
+                        <!-- Function -->
+                        
+                            <h4 id="printInfo">
+                                <span class="fw-function sm-icon"> </span>
+                                public function printInfo
+                                ( string msg )
+                                
+                            </h4>
                             
-                        </h4>
-                        
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Logs the specified message at INFO level.
-                            </p>
-                        
-                        
-                            <p>
-                                <label class="table-header-text">Parameters:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Parameter Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
-                                
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Logs the specified message at INFO level.
+                                </p>
+                            
+                            
+                                <p>
+                                    <label class="table-header-text">Parameters:</label>
+                                <table>
                                     <tr>
-                                        <td class="col-md-4">msg</td>
-                                        <td class="col-md-2">string</td>
-                                        <td class="col-md-6">The message to be logged.</td>
+                                        <th class="col-md-4">Parameter Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
                                     </tr>
-                                
-                            </table>
-                            </p>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">msg</td>
+                                            <td class="col-md-2">string</td>
+                                            <td class="col-md-6">The message to be logged.</td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                            
                         
+                        <!-- Struct-binded functions grouped together -->
                         
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
+                        <!-- Connectors and its actions -->
+                        
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
                 
-                    <!-- Function -->
-                    
-                        <h4 id="printTrace">
-                            <span class="fw-function sm-icon"> </span>
-                            public function printTrace
-                            ( string msg )
+                    <div class="construct-wrapper">
+                        <!-- Function -->
+                        
+                            <h4 id="printTrace">
+                                <span class="fw-function sm-icon"> </span>
+                                public function printTrace
+                                ( string msg )
+                                
+                            </h4>
                             
-                        </h4>
-                        
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Logs the specified message at TRACE level.
-                            </p>
-                        
-                        
-                            <p>
-                                <label class="table-header-text">Parameters:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Parameter Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
-                                
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Logs the specified message at TRACE level.
+                                </p>
+                            
+                            
+                                <p>
+                                    <label class="table-header-text">Parameters:</label>
+                                <table>
                                     <tr>
-                                        <td class="col-md-4">msg</td>
-                                        <td class="col-md-2">string</td>
-                                        <td class="col-md-6">The message to be logged</td>
+                                        <th class="col-md-4">Parameter Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
                                     </tr>
-                                
-                            </table>
-                            </p>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">msg</td>
+                                            <td class="col-md-2">string</td>
+                                            <td class="col-md-6">The message to be logged</td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                            
                         
+                        <!-- Struct-binded functions grouped together -->
                         
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
+                        <!-- Connectors and its actions -->
+                        
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
                 
-                    <!-- Function -->
-                    
-                        <h4 id="printWarn">
-                            <span class="fw-function sm-icon"> </span>
-                            public function printWarn
-                            ( string msg )
+                    <div class="construct-wrapper">
+                        <!-- Function -->
+                        
+                            <h4 id="printWarn">
+                                <span class="fw-function sm-icon"> </span>
+                                public function printWarn
+                                ( string msg )
+                                
+                            </h4>
                             
-                        </h4>
-                        
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Logs the specified message at WARN level.
-                            </p>
-                        
-                        
-                            <p>
-                                <label class="table-header-text">Parameters:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Parameter Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
-                                
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Logs the specified message at WARN level.
+                                </p>
+                            
+                            
+                                <p>
+                                    <label class="table-header-text">Parameters:</label>
+                                <table>
                                     <tr>
-                                        <td class="col-md-4">msg</td>
-                                        <td class="col-md-2">string</td>
-                                        <td class="col-md-6">The message to be logged</td>
+                                        <th class="col-md-4">Parameter Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
                                     </tr>
-                                
-                            </table>
-                            </p>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">msg</td>
+                                            <td class="col-md-2">string</td>
+                                            <td class="col-md-6">The message to be logged</td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                            
                         
+                        <!-- Struct-binded functions grouped together -->
                         
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
+                        <!-- Connectors and its actions -->
+                        
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
                 
             </div>
         </div>

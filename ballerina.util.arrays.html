@@ -8,11 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="docerina-theme/libs/bootstrap-3.0.0/css/bootstrap.min.css">
 
-    <!-- custom CSS -->
-    <link rel="stylesheet" href="docerina-theme/css/main.css">
-
     <!-- Ballerina font CSS -->
     <link rel="stylesheet" href="docerina-theme/css/font-ballerina/css/font-ballerina.css">
+
+    <!-- Roboto font CSS -->
+    <link rel="stylesheet" href="docerina-theme/css/roboto.css">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="docerina-theme/css/main.css">
 
     <!--Jquery JS-->
     <script src="docerina-theme/js/jquery.min.js"></script>
@@ -334,223 +337,231 @@
                     <span class="bold">ballerina.util.arrays</span> package
                 </h3>
                 
-                    <!-- Function -->
-                    
-                        <h4 id="concat">
-                            <span class="fw-function sm-icon"> </span>
-                            public function concat
-                            ( string[] arr , string delimiter )
+                    <div class="construct-wrapper">
+                        <!-- Function -->
+                        
+                            <h4 id="concat">
+                                <span class="fw-function sm-icon"> </span>
+                                public function concat
+                                ( string[] arr , string delimiter )
+                                
+                                ( string )
+                                
+                            </h4>
                             
-                            ( string )
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Concatenate elements of an string array using a delimiter.
+                                </p>
                             
-                        </h4>
-                        
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Concatenate elements of an string array using a delimiter.
-                            </p>
-                        
-                        
-                            <p>
-                                <label class="table-header-text">Parameters:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Parameter Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
-                                
+                            
+                                <p>
+                                    <label class="table-header-text">Parameters:</label>
+                                <table>
                                     <tr>
-                                        <td class="col-md-4">arr</td>
-                                        <td class="col-md-2">string[]</td>
-                                        <td class="col-md-6">string array to be concatenated</td>
+                                        <th class="col-md-4">Parameter Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
                                     </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">delimiter</td>
-                                        <td class="col-md-2">string</td>
-                                        <td class="col-md-6">delimiter which should be used in the concatenation</td>
-                                    </tr>
-                                
-                            </table>
-                            </p>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">arr</td>
+                                            <td class="col-md-2">string[]</td>
+                                            <td class="col-md-6">string array to be concatenated</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">delimiter</td>
+                                            <td class="col-md-2">string</td>
+                                            <td class="col-md-6">delimiter which should be used in the concatenation</td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                            
                         
+                        <!-- Struct-binded functions grouped together -->
                         
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
+                        <!-- Connectors and its actions -->
+                        
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
                 
-                    <!-- Function -->
-                    
-                        <h4 id="copyOf">
-                            <span class="fw-function sm-icon"> </span>
-                            public function copyOf
-                            ( any anyArrayFrom , any anyArrayTo )
+                    <div class="construct-wrapper">
+                        <!-- Function -->
+                        
+                            <h4 id="copyOf">
+                                <span class="fw-function sm-icon"> </span>
+                                public function copyOf
+                                ( any anyArrayFrom , any anyArrayTo )
+                                
+                                ( int )
+                                
+                            </h4>
                             
-                            ( int )
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Copies the specified any array
+                                </p>
                             
-                        </h4>
-                        
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Copies the specified any array
-                            </p>
-                        
-                        
-                            <p>
-                                <label class="table-header-text">Parameters:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Parameter Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
-                                
+                            
+                                <p>
+                                    <label class="table-header-text">Parameters:</label>
+                                <table>
                                     <tr>
-                                        <td class="col-md-4">anyArrayFrom</td>
-                                        <td class="col-md-2">any</td>
-                                        <td class="col-md-6">The from array to be copied</td>
+                                        <th class="col-md-4">Parameter Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
                                     </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">anyArrayTo</td>
-                                        <td class="col-md-2">any</td>
-                                        <td class="col-md-6">The to array to which to copy to</td>
-                                    </tr>
-                                
-                            </table>
-                            </p>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">anyArrayFrom</td>
+                                            <td class="col-md-2">any</td>
+                                            <td class="col-md-6">The from array to be copied</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">anyArrayTo</td>
+                                            <td class="col-md-2">any</td>
+                                            <td class="col-md-6">The to array to which to copy to</td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                            
                         
+                        <!-- Struct-binded functions grouped together -->
                         
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
+                        <!-- Connectors and its actions -->
+                        
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
                 
-                    <!-- Function -->
-                    
-                        <h4 id="copyOfRange">
-                            <span class="fw-function sm-icon"> </span>
-                            public function copyOfRange
-                            ( any anyArrayFrom , any anyArrayTo , int from , int to )
+                    <div class="construct-wrapper">
+                        <!-- Function -->
+                        
+                            <h4 id="copyOfRange">
+                                <span class="fw-function sm-icon"> </span>
+                                public function copyOfRange
+                                ( any anyArrayFrom , any anyArrayTo , int from , int to )
+                                
+                                ( int )
+                                
+                            </h4>
                             
-                            ( int )
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Copies the specified range of the specified string array 
+                                </p>
                             
-                        </h4>
-                        
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Copies the specified range of the specified string array 
-                            </p>
-                        
-                        
-                            <p>
-                                <label class="table-header-text">Parameters:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Parameter Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
-                                
+                            
+                                <p>
+                                    <label class="table-header-text">Parameters:</label>
+                                <table>
                                     <tr>
-                                        <td class="col-md-4">anyArrayFrom</td>
-                                        <td class="col-md-2">any</td>
-                                        <td class="col-md-6">The any array from which the range will be copied</td>
+                                        <th class="col-md-4">Parameter Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
                                     </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">anyArrayTo</td>
-                                        <td class="col-md-2">any</td>
-                                        <td class="col-md-6">The any array to which the range will be copied</td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">from</td>
-                                        <td class="col-md-2">int</td>
-                                        <td class="col-md-6">The initial index of the range</td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">to</td>
-                                        <td class="col-md-2">int</td>
-                                        <td class="col-md-6">The final index of the range</td>
-                                    </tr>
-                                
-                            </table>
-                            </p>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">anyArrayFrom</td>
+                                            <td class="col-md-2">any</td>
+                                            <td class="col-md-6">The any array from which the range will be copied</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">anyArrayTo</td>
+                                            <td class="col-md-2">any</td>
+                                            <td class="col-md-6">The any array to which the range will be copied</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">from</td>
+                                            <td class="col-md-2">int</td>
+                                            <td class="col-md-6">The initial index of the range</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">to</td>
+                                            <td class="col-md-2">int</td>
+                                            <td class="col-md-6">The final index of the range</td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                            
                         
+                        <!-- Struct-binded functions grouped together -->
                         
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
+                        <!-- Connectors and its actions -->
+                        
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
                 
-                    <!-- Function -->
-                    
-                        <h4 id="sort">
-                            <span class="fw-function sm-icon"> </span>
-                            public function sort
-                            ( string[] arr )
-                            
-                            ( string[] )
-                            
-                        </h4>
+                    <div class="construct-wrapper">
+                        <!-- Function -->
                         
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Sorts the specified string array 
-                            </p>
-                        
-                        
-                            <p>
-                                <label class="table-header-text">Parameters:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Parameter Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
+                            <h4 id="sort">
+                                <span class="fw-function sm-icon"> </span>
+                                public function sort
+                                ( string[] arr )
                                 
+                                ( string[] )
+                                
+                            </h4>
+                            
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Sorts the specified string array 
+                                </p>
+                            
+                            
+                                <p>
+                                    <label class="table-header-text">Parameters:</label>
+                                <table>
                                     <tr>
-                                        <td class="col-md-4">arr</td>
-                                        <td class="col-md-2">string[]</td>
-                                        <td class="col-md-6">The string array to be sorted</td>
+                                        <th class="col-md-4">Parameter Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
                                     </tr>
-                                
-                            </table>
-                            </p>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">arr</td>
+                                            <td class="col-md-2">string[]</td>
+                                            <td class="col-md-6">The string array to be sorted</td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                            
                         
+                        <!-- Struct-binded functions grouped together -->
                         
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
+                        <!-- Connectors and its actions -->
+                        
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
                 
             </div>
         </div>

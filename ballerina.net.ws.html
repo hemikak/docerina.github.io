@@ -8,11 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="docerina-theme/libs/bootstrap-3.0.0/css/bootstrap.min.css">
 
-    <!-- custom CSS -->
-    <link rel="stylesheet" href="docerina-theme/css/main.css">
-
     <!-- Ballerina font CSS -->
     <link rel="stylesheet" href="docerina-theme/css/font-ballerina/css/font-ballerina.css">
+
+    <!-- Roboto font CSS -->
+    <link rel="stylesheet" href="docerina-theme/css/roboto.css">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="docerina-theme/css/main.css">
 
     <!--Jquery JS-->
     <script src="docerina-theme/js/jquery.min.js"></script>
@@ -673,1230 +676,1254 @@
                     <span class="bold">ballerina.net.ws</span> package
                 </h3>
                 
-                    <!-- Function -->
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                        <h4 id="BinaryFrame">
-                            <span class="fw-struct sm-icon"></span>
-                            public struct BinaryFrame
-                        </h4>
+                    <div class="construct-wrapper">
+                        <!-- Function -->
                         
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Represents a WebSocket binary frame in Ballerina.
-                            </p>
+                        <!-- Struct-binded functions grouped together -->
                         
-                        
-                            <p>
-                                <label class="table-header-text">Fields:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Field Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
-                                
+                            <h4 id="BinaryFrame">
+                                <span class="fw-struct sm-icon"></span>
+                                public struct BinaryFrame
+                            </h4>
+                            
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Represents a WebSocket binary frame in Ballerina.
+                                </p>
+                            
+                            
+                                <p>
+                                    <label class="table-header-text">Fields:</label>
+                                <table>
                                     <tr>
-                                        <td class="col-md-4">data</td>
-                                        <td class="col-md-2">blob</td>
-                                        <td class="col-md-6">Binary data of the frame</td>
+                                        <th class="col-md-4">Field Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
                                     </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">isFinalFragment</td>
-                                        <td class="col-md-2">boolean</td>
-                                        <td class="col-md-6">Check whether this is the final frame. True if the frame is final frame.</td>
-                                    </tr>
-                                
-                            </table>
-                            </p>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">data</td>
+                                            <td class="col-md-2">blob</td>
+                                            <td class="col-md-6">Binary data of the frame</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">isFinalFragment</td>
+                                            <td class="col-md-2">boolean</td>
+                                            <td class="col-md-6">Check whether this is the final frame. True if the frame is final frame.</td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                            
                         
+                        <!-- Connectors and its actions -->
                         
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
                 
-                    <!-- Function -->
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                        <h4 id="ClientConnectorConfig">
-                            <span class="fw-struct sm-icon"></span>
-                            public struct ClientConnectorConfig
-                        </h4>
+                    <div class="construct-wrapper">
+                        <!-- Function -->
                         
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Configuration struct for WebSocket client connection
-                            </p>
+                        <!-- Struct-binded functions grouped together -->
                         
-                        
-                            <p>
-                                <label class="table-header-text">Fields:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Field Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
-                                
+                            <h4 id="ClientConnectorConfig">
+                                <span class="fw-struct sm-icon"></span>
+                                public struct ClientConnectorConfig
+                            </h4>
+                            
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Configuration struct for WebSocket client connection
+                                </p>
+                            
+                            
+                                <p>
+                                    <label class="table-header-text">Fields:</label>
+                                <table>
                                     <tr>
-                                        <td class="col-md-4">subProtocols</td>
-                                        <td class="col-md-2">string[]</td>
-                                        <td class="col-md-6">Negotiable sub protocols for the client</td>
+                                        <th class="col-md-4">Field Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
                                     </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">parentConnectionID</td>
-                                        <td class="col-md-2">string</td>
-                                        <td class="col-md-6">Connection ID of the parent connection to which it should be bound to when connecting</td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">customHeaders</td>
-                                        <td class="col-md-2">map</td>
-                                        <td class="col-md-6">Custom headers which should be sent to the server</td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">idleTimeoutInSeconds</td>
-                                        <td class="col-md-2">int</td>
-                                        <td class="col-md-6">Idle timeout of the client. Upon timeout, onIdleTimeout resource in the client service will be triggered (if there is one defined).</td>
-                                    </tr>
-                                
-                            </table>
-                            </p>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">subProtocols</td>
+                                            <td class="col-md-2">string[]</td>
+                                            <td class="col-md-6">Negotiable sub protocols for the client</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">parentConnectionID</td>
+                                            <td class="col-md-2">string</td>
+                                            <td class="col-md-6">Connection ID of the parent connection to which it should be bound to when connecting</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">customHeaders</td>
+                                            <td class="col-md-2">map</td>
+                                            <td class="col-md-6">Custom headers which should be sent to the server</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">idleTimeoutInSeconds</td>
+                                            <td class="col-md-2">int</td>
+                                            <td class="col-md-6">Idle timeout of the client. Upon timeout, onIdleTimeout resource in the client service will be triggered (if there is one defined).</td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                            
                         
+                        <!-- Connectors and its actions -->
                         
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
                 
-                    <!-- Function -->
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                        <h4 id="CloseFrame">
-                            <span class="fw-struct sm-icon"></span>
-                            public struct CloseFrame
-                        </h4>
+                    <div class="construct-wrapper">
+                        <!-- Function -->
                         
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Represents a WebSocket close frame in Ballerina.
-                            </p>
+                        <!-- Struct-binded functions grouped together -->
                         
-                        
-                            <p>
-                                <label class="table-header-text">Fields:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Field Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
-                                
+                            <h4 id="CloseFrame">
+                                <span class="fw-struct sm-icon"></span>
+                                public struct CloseFrame
+                            </h4>
+                            
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Represents a WebSocket close frame in Ballerina.
+                                </p>
+                            
+                            
+                                <p>
+                                    <label class="table-header-text">Fields:</label>
+                                <table>
                                     <tr>
-                                        <td class="col-md-4">statusCode</td>
-                                        <td class="col-md-2">int</td>
-                                        <td class="col-md-6">Status code for the reason of the closure of the connection</td>
+                                        <th class="col-md-4">Field Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
                                     </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">reason</td>
-                                        <td class="col-md-2">string</td>
-                                        <td class="col-md-6">Reason to close the connection</td>
-                                    </tr>
-                                
-                            </table>
-                            </p>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">statusCode</td>
+                                            <td class="col-md-2">int</td>
+                                            <td class="col-md-6">Status code for the reason of the closure of the connection</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">reason</td>
+                                            <td class="col-md-2">string</td>
+                                            <td class="col-md-6">Reason to close the connection</td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                            
                         
+                        <!-- Connectors and its actions -->
                         
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
                 
-                    <!-- Function -->
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                        <h4 id="Connection">
-                            <span class="fw-struct sm-icon"></span>
-                            public struct Connection
-                        </h4>
+                    <div class="construct-wrapper">
+                        <!-- Function -->
                         
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Represents a WebSocket connection in ballerina. This include all connection oriented operations.
-                            </p>
+                        <!-- Struct-binded functions grouped together -->
                         
-                        
-                            <p>
-                                <label class="table-header-text">Fields:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Field Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
-                                
+                            <h4 id="Connection">
+                                <span class="fw-struct sm-icon"></span>
+                                public struct Connection
+                            </h4>
+                            
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Represents a WebSocket connection in ballerina. This include all connection oriented operations.
+                                </p>
+                            
+                            
+                                <p>
+                                    <label class="table-header-text">Fields:</label>
+                                <table>
                                     <tr>
-                                        <td class="col-md-4">attributes</td>
-                                        <td class="col-md-2">map</td>
-                                        <td class="col-md-6">Custom user attributes</td>
+                                        <th class="col-md-4">Field Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
                                     </tr>
-                                
-                            </table>
-                            </p>
-                        
-                        
-                            <div class="function-wrapper">
-                                <ul>
                                     
-                                        <li>
-                                            <h4 id="closeConnection">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; Connection &gt;</span>
-                                                closeConnection
-                                                ( int statusCode , string reason )
-                                                
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Close the connection
-                                                </p>
-                                            
-                                            
-                                                <p>
-                                                    <label class="table-header-text">Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Parameter Name</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4">statusCode</td>
-                                                            <td class="col-md-2">int</td>
-                                                            <td class="col-md-6">Status code for closing the connection</td>
-                                                        </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4">reason</td>
-                                                            <td class="col-md-2">string</td>
-                                                            <td class="col-md-6">Reason for closing the connection</td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                            
-                                        </li>
+                                        <tr>
+                                            <td class="col-md-4">attributes</td>
+                                            <td class="col-md-2">map</td>
+                                            <td class="col-md-6">Custom user attributes</td>
+                                        </tr>
                                     
-                                        <li>
-                                            <h4 id="getID">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; Connection &gt;</span>
-                                                getID
-                                                (  )
-                                                
-                                                ( string )
-                                                
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Gets the ID of the WebSocket connection
-                                                </p>
-                                            
-                                            
-                                            
-                                                <label class="table-header-text">Return Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Return Variable</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
+                                </table>
+                                </p>
+                            
+                            
+                                <div class="function-wrapper">
+                                    <ul>
+                                        
+                                            <li>
+                                                <h4 id="closeConnection">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; Connection &gt;</span>
+                                                    closeConnection
+                                                    ( int statusCode , string reason )
                                                     
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Close the connection
+                                                    </p>
+                                                
+                                                
+                                                    <p>
+                                                        <label class="table-header-text">Parameters:</label>
+                                                    <table>
                                                         <tr>
-                                                            <td class="col-md-4"></td>
-                                                            <td class="col-md-2">string</td>
-                                                            <td class="col-md-6"></td>
+                                                            <th class="col-md-4">Parameter Name</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
                                                         </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                        </li>
-                                    
-                                        <li>
-                                            <h4 id="getNegotiatedSubProtocol">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; Connection &gt;</span>
-                                                getNegotiatedSubProtocol
-                                                (  )
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4">statusCode</td>
+                                                                <td class="col-md-2">int</td>
+                                                                <td class="col-md-6">Status code for closing the connection</td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4">reason</td>
+                                                                <td class="col-md-2">string</td>
+                                                                <td class="col-md-6">Reason for closing the connection</td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
                                                 
-                                                ( string )
                                                 
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Gets the negotiated sub protocol of the connection
-                                                </p>
-                                            
-                                            
-                                            
-                                                <label class="table-header-text">Return Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Return Variable</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
+                                            </li>
+                                        
+                                            <li>
+                                                <h4 id="getID">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; Connection &gt;</span>
+                                                    getID
+                                                    (  )
                                                     
-                                                        <tr>
-                                                            <td class="col-md-4"></td>
-                                                            <td class="col-md-2">string</td>
-                                                            <td class="col-md-6"></td>
-                                                        </tr>
+                                                    ( string )
                                                     
-                                                </table>
-                                                </p>
-                                            
-                                        </li>
-                                    
-                                        <li>
-                                            <h4 id="getParentConnection">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; Connection &gt;</span>
-                                                getParentConnection
-                                                (  )
+                                                </h4>
                                                 
-                                                ( Connection )
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Gets the ID of the WebSocket connection
+                                                    </p>
                                                 
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Gets the parent connection if there is one
-                                                </p>
-                                            
-                                            
-                                            
-                                                <label class="table-header-text">Return Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Return Variable</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4"></td>
-                                                            <td class="col-md-2">Connection</td>
-                                                            <td class="col-md-6"></td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                        </li>
-                                    
-                                        <li>
-                                            <h4 id="getUpgradeHeader">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; Connection &gt;</span>
-                                                getUpgradeHeader
-                                                ( string key )
                                                 
-                                                ( string )
                                                 
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Gets a value of a header
-                                                </p>
-                                            
-                                            
-                                                <p>
-                                                    <label class="table-header-text">Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Parameter Name</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4">key</td>
-                                                            <td class="col-md-2">string</td>
-                                                            <td class="col-md-6">Key of the header for which the value should be retrieved</td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                            
-                                                <label class="table-header-text">Return Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Return Variable</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4"></td>
-                                                            <td class="col-md-2">string</td>
-                                                            <td class="col-md-6"></td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                        </li>
-                                    
-                                        <li>
-                                            <h4 id="getUpgradeHeaders">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; Connection &gt;</span>
-                                                getUpgradeHeaders
-                                                (  )
-                                                
-                                                ( map )
-                                                
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Gets a map of all the upgrade headers of the connection
-                                                </p>
-                                            
-                                            
-                                            
-                                                <label class="table-header-text">Return Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Return Variable</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4"></td>
-                                                            <td class="col-md-2">map</td>
-                                                            <td class="col-md-6"></td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                        </li>
-                                    
-                                        <li>
-                                            <h4 id="isOpen">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; Connection &gt;</span>
-                                                isOpen
-                                                (  )
-                                                
-                                                ( boolean )
-                                                
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Checks whether the connection is still open or not.
-                                                </p>
-                                            
-                                            
-                                            
-                                                <label class="table-header-text">Return Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Return Variable</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4"></td>
-                                                            <td class="col-md-2">boolean</td>
-                                                            <td class="col-md-6"></td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                        </li>
-                                    
-                                        <li>
-                                            <h4 id="isSecure">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; Connection &gt;</span>
-                                                isSecure
-                                                (  )
-                                                
-                                                ( boolean )
-                                                
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Checks whether the connection is secure or not
-                                                </p>
-                                            
-                                            
-                                            
-                                                <label class="table-header-text">Return Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Return Variable</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4"></td>
-                                                            <td class="col-md-2">boolean</td>
-                                                            <td class="col-md-6"></td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                        </li>
-                                    
-                                        <li>
-                                            <h4 id="ping">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; Connection &gt;</span>
-                                                ping
-                                                ( blob data )
-                                                
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Ping the connection
-                                                </p>
-                                            
-                                            
-                                                <p>
-                                                    <label class="table-header-text">Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Parameter Name</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4">data</td>
-                                                            <td class="col-md-2">blob</td>
-                                                            <td class="col-md-6">Binary data to be sent</td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                            
-                                        </li>
-                                    
-                                        <li>
-                                            <h4 id="pong">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; Connection &gt;</span>
-                                                pong
-                                                ( blob data )
-                                                
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Send pong message to the connection
-                                                </p>
-                                            
-                                            
-                                                <p>
-                                                    <label class="table-header-text">Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Parameter Name</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4">data</td>
-                                                            <td class="col-md-2">blob</td>
-                                                            <td class="col-md-6">Binary data to be sent</td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                            
-                                        </li>
-                                    
-                                        <li>
-                                            <h4 id="pushBinary">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; Connection &gt;</span>
-                                                pushBinary
-                                                ( blob data )
-                                                
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Push binary data to the connection
-                                                </p>
-                                            
-                                            
-                                                <p>
-                                                    <label class="table-header-text">Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Parameter Name</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4">data</td>
-                                                            <td class="col-md-2">blob</td>
-                                                            <td class="col-md-6">Binary data to be sent</td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                            
-                                        </li>
-                                    
-                                        <li>
-                                            <h4 id="pushText">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; Connection &gt;</span>
-                                                pushText
-                                                ( string text )
-                                                
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Push text to the connection
-                                                </p>
-                                            
-                                            
-                                                <p>
-                                                    <label class="table-header-text">Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Parameter Name</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4">text</td>
-                                                            <td class="col-md-2">string</td>
-                                                            <td class="col-md-6">Text to be sent</td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                            
-                                        </li>
-                                    
-                                </ul>
-                            </div>
-                        
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
-                
-                    <!-- Function -->
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                        <h4 id="HandshakeConnection">
-                            <span class="fw-struct sm-icon"></span>
-                            public struct HandshakeConnection
-                        </h4>
-                        
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Represent the details needed before the Handshake is done.
-                            </p>
-                        
-                        
-                            <p>
-                                <label class="table-header-text">Fields:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Field Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">connectionID</td>
-                                        <td class="col-md-2">string</td>
-                                        <td class="col-md-6">ID of the connection</td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">isSecure</td>
-                                        <td class="col-md-2">boolean</td>
-                                        <td class="col-md-6">True if the connection is secured</td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">upgradeHeaders</td>
-                                        <td class="col-md-2">map</td>
-                                        <td class="col-md-6">Received headers in the connection upgrade</td>
-                                    </tr>
-                                
-                            </table>
-                            </p>
-                        
-                        
-                            <div class="function-wrapper">
-                                <ul>
-                                    
-                                        <li>
-                                            <h4 id="cancelHandshake">
-                                                <span class=fw-function></span>
-                                                <span class="thin-text light-gray">&lt; HandshakeConnection &gt;</span>
-                                                cancelHandshake
-                                                ( int statusCode , string reason )
-                                                
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Cancels the handshake
-                                                </p>
-                                            
-                                            
-                                                <p>
-                                                    <label class="table-header-text">Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Parameter Name</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4">statusCode</td>
-                                                            <td class="col-md-2">int</td>
-                                                            <td class="col-md-6">Status code for closing the connection</td>
-                                                        </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4">reason</td>
-                                                            <td class="col-md-2">string</td>
-                                                            <td class="col-md-6">Reason for closing the connection</td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                            
-                                        </li>
-                                    
-                                </ul>
-                            </div>
-                        
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
-                
-                    <!-- Function -->
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                        <h4 id="PingFrame">
-                            <span class="fw-struct sm-icon"></span>
-                            public struct PingFrame
-                        </h4>
-                        
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Represents a WebSocket ping frame in Ballerina.
-                            </p>
-                        
-                        
-                            <p>
-                                <label class="table-header-text">Fields:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Field Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">data</td>
-                                        <td class="col-md-2">blob</td>
-                                        <td class="col-md-6">Data of the frame</td>
-                                    </tr>
-                                
-                            </table>
-                            </p>
-                        
-                        
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
-                
-                    <!-- Function -->
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                        <h4 id="PongFrame">
-                            <span class="fw-struct sm-icon"></span>
-                            public struct PongFrame
-                        </h4>
-                        
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Represents a WebSocket pong frame in Ballerina.
-                            </p>
-                        
-                        
-                            <p>
-                                <label class="table-header-text">Fields:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Field Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">data</td>
-                                        <td class="col-md-2">blob</td>
-                                        <td class="col-md-6">Data of the frame</td>
-                                    </tr>
-                                
-                            </table>
-                            </p>
-                        
-                        
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
-                
-                    <!-- Function -->
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                        <h4 id="TextFrame">
-                            <span class="fw-struct sm-icon"></span>
-                            public struct TextFrame
-                        </h4>
-                        
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Represents a WebSocket text frame in Ballerina.
-                            </p>
-                        
-                        
-                            <p>
-                                <label class="table-header-text">Fields:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Field Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">text</td>
-                                        <td class="col-md-2">string</td>
-                                        <td class="col-md-6">Text in the text frame</td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">isFinalFragment</td>
-                                        <td class="col-md-2">boolean</td>
-                                        <td class="col-md-6">Check whether this is the final frame. True if the frame is final frame.</td>
-                                    </tr>
-                                
-                            </table>
-                            </p>
-                        
-                        
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
-                
-                    <!-- Function -->
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                        <h4 id="WsConnectorError">
-                            <span class="fw-struct sm-icon"></span>
-                            public struct WsConnectorError
-                        </h4>
-                        
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Error struct for WebSocket connection errors
-                            </p>
-                        
-                        
-                            <p>
-                                <label class="table-header-text">Fields:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Field Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">msg</td>
-                                        <td class="col-md-2">string</td>
-                                        <td class="col-md-6">An error message explaining the error</td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">cause</td>
-                                        <td class="col-md-2">error</td>
-                                        <td class="col-md-6">The error that caused HttpConnectorError to be returned</td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">stackTrace</td>
-                                        <td class="col-md-2">StackFrame[]</td>
-                                        <td class="col-md-6">Represents the invocation stack if WsConnectorError is thrown</td>
-                                    </tr>
-                                
-                            </table>
-                            </p>
-                        
-                        
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
-                
-                    <!-- Function -->
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                    <!-- Connectors and its actions -->
-                    
-                        <h4 id="WsClient">
-                            <span class="fw-connector sm-icon"></span>
-                            public connector WsClient ( string url , string callbackService )
-                        </h4>
-                        
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>WebSocket client connector for connecting to a WebSocket backend
-                            </p>
-                        
-                        
-                            <p>
-                                <label class="table-header-text">Parameters:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Parameter Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">url</td>
-                                        <td class="col-md-2">string</td>
-                                        <td class="col-md-6">WebSocket URL for the backend</td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">callbackService</td>
-                                        <td class="col-md-2">string</td>
-                                        <td class="col-md-6">Callback service to listen to the incoming messages from the backend</td>
-                                    </tr>
-                                
-                            </table>
-                            </p>
-                        
-                        
-                            <div class="function-wrapper">
-                                <h4>Actions:</h4>
-                                <ul>
-                                    
-                                        <li>
-                                            <h4 id="connect">
-                                                <span class=fw-action></span>
-                                                <span class="thin-text light-gray">< WsClient ></span>
-                                                connect
-                                                ( ClientConnectorConfig config )
-                                                
-                                                ( Connection , WsConnectorError )
-                                                
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Connect to remote endpoint
-                                                </p>
-                                            
-                                            
-                                                <p>
-                                                    <label class="table-header-text">Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Parameter Name</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4">config</td>
-                                                            <td class="col-md-2">ClientConnectorConfig</td>
-                                                            <td class="col-md-6">ClientConnectorConfig for the connection</td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                            
-                                                <p>
                                                     <label class="table-header-text">Return Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Return Variable</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
+                                                    <table>
                                                         <tr>
-                                                            <td class="col-md-4"></td>
-                                                            <td class="col-md-2">Connection</td>
-                                                            <td class="col-md-6"></td>
+                                                            <th class="col-md-4">Return Variable</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
                                                         </tr>
-                                                    
-                                                        <tr>
-                                                            <td class="col-md-4"></td>
-                                                            <td class="col-md-2">WsConnectorError</td>
-                                                            <td class="col-md-6"></td>
-                                                        </tr>
-                                                    
-                                                </table>
-                                                </p>
-                                            
-                                        </li>
-                                    
-                                        <li>
-                                            <h4 id="connectWithDefault">
-                                                <span class=fw-action></span>
-                                                <span class="thin-text light-gray">< WsClient ></span>
-                                                connectWithDefault
-                                                (  )
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4"></td>
+                                                                <td class="col-md-2">string</td>
+                                                                <td class="col-md-6"></td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
                                                 
-                                                ( Connection , WsConnectorError )
+                                            </li>
+                                        
+                                            <li>
+                                                <h4 id="getNegotiatedSubProtocol">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; Connection &gt;</span>
+                                                    getNegotiatedSubProtocol
+                                                    (  )
+                                                    
+                                                    ( string )
+                                                    
+                                                </h4>
                                                 
-                                            </h4>
-                                            
-                                                <p>
-                                                    <span class="fw-right gray xs-icon"></span>Connect to remote endpoint with default configuration
-                                                </p>
-                                            
-                                            
-                                            
-                                                <p>
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Gets the negotiated sub protocol of the connection
+                                                    </p>
+                                                
+                                                
+                                                
                                                     <label class="table-header-text">Return Parameters:</label>
-                                                <table>
-                                                    <tr>
-                                                        <th class="col-md-4">Return Variable</th>
-                                                        <th class="col-md-2">Data Type</th>
-                                                        <th class="col-md-6">Description</th>
-                                                    </tr>
-                                                    
+                                                    <table>
                                                         <tr>
-                                                            <td class="col-md-4"></td>
-                                                            <td class="col-md-2">Connection</td>
-                                                            <td class="col-md-6"></td>
+                                                            <th class="col-md-4">Return Variable</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
                                                         </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4"></td>
+                                                                <td class="col-md-2">string</td>
+                                                                <td class="col-md-6"></td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <h4 id="getParentConnection">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; Connection &gt;</span>
+                                                    getParentConnection
+                                                    (  )
                                                     
+                                                    ( Connection )
+                                                    
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Gets the parent connection if there is one
+                                                    </p>
+                                                
+                                                
+                                                
+                                                    <label class="table-header-text">Return Parameters:</label>
+                                                    <table>
                                                         <tr>
-                                                            <td class="col-md-4"></td>
-                                                            <td class="col-md-2">WsConnectorError</td>
-                                                            <td class="col-md-6"></td>
+                                                            <th class="col-md-4">Return Variable</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
                                                         </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4"></td>
+                                                                <td class="col-md-2">Connection</td>
+                                                                <td class="col-md-6"></td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <h4 id="getUpgradeHeader">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; Connection &gt;</span>
+                                                    getUpgradeHeader
+                                                    ( string key )
                                                     
-                                                </table>
-                                                </p>
-                                            
-                                        </li>
+                                                    ( string )
+                                                    
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Gets a value of a header
+                                                    </p>
+                                                
+                                                
+                                                    <p>
+                                                        <label class="table-header-text">Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Parameter Name</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4">key</td>
+                                                                <td class="col-md-2">string</td>
+                                                                <td class="col-md-6">Key of the header for which the value should be retrieved</td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                                
+                                                    <label class="table-header-text">Return Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Return Variable</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4"></td>
+                                                                <td class="col-md-2">string</td>
+                                                                <td class="col-md-6"></td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <h4 id="getUpgradeHeaders">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; Connection &gt;</span>
+                                                    getUpgradeHeaders
+                                                    (  )
+                                                    
+                                                    ( map )
+                                                    
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Gets a map of all the upgrade headers of the connection
+                                                    </p>
+                                                
+                                                
+                                                
+                                                    <label class="table-header-text">Return Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Return Variable</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4"></td>
+                                                                <td class="col-md-2">map</td>
+                                                                <td class="col-md-6"></td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <h4 id="isOpen">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; Connection &gt;</span>
+                                                    isOpen
+                                                    (  )
+                                                    
+                                                    ( boolean )
+                                                    
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Checks whether the connection is still open or not.
+                                                    </p>
+                                                
+                                                
+                                                
+                                                    <label class="table-header-text">Return Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Return Variable</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4"></td>
+                                                                <td class="col-md-2">boolean</td>
+                                                                <td class="col-md-6"></td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <h4 id="isSecure">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; Connection &gt;</span>
+                                                    isSecure
+                                                    (  )
+                                                    
+                                                    ( boolean )
+                                                    
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Checks whether the connection is secure or not
+                                                    </p>
+                                                
+                                                
+                                                
+                                                    <label class="table-header-text">Return Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Return Variable</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4"></td>
+                                                                <td class="col-md-2">boolean</td>
+                                                                <td class="col-md-6"></td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <h4 id="ping">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; Connection &gt;</span>
+                                                    ping
+                                                    ( blob data )
+                                                    
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Ping the connection
+                                                    </p>
+                                                
+                                                
+                                                    <p>
+                                                        <label class="table-header-text">Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Parameter Name</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4">data</td>
+                                                                <td class="col-md-2">blob</td>
+                                                                <td class="col-md-6">Binary data to be sent</td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <h4 id="pong">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; Connection &gt;</span>
+                                                    pong
+                                                    ( blob data )
+                                                    
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Send pong message to the connection
+                                                    </p>
+                                                
+                                                
+                                                    <p>
+                                                        <label class="table-header-text">Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Parameter Name</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4">data</td>
+                                                                <td class="col-md-2">blob</td>
+                                                                <td class="col-md-6">Binary data to be sent</td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <h4 id="pushBinary">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; Connection &gt;</span>
+                                                    pushBinary
+                                                    ( blob data )
+                                                    
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Push binary data to the connection
+                                                    </p>
+                                                
+                                                
+                                                    <p>
+                                                        <label class="table-header-text">Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Parameter Name</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4">data</td>
+                                                                <td class="col-md-2">blob</td>
+                                                                <td class="col-md-6">Binary data to be sent</td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <h4 id="pushText">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; Connection &gt;</span>
+                                                    pushText
+                                                    ( string text )
+                                                    
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Push text to the connection
+                                                    </p>
+                                                
+                                                
+                                                    <p>
+                                                        <label class="table-header-text">Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Parameter Name</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4">text</td>
+                                                                <td class="col-md-2">string</td>
+                                                                <td class="col-md-6">Text to be sent</td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                                
+                                            </li>
+                                        
+                                    </ul>
+                                </div>
+                            
+                        
+                        <!-- Connectors and its actions -->
+                        
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
+                
+                    <div class="construct-wrapper">
+                        <!-- Function -->
+                        
+                        <!-- Struct-binded functions grouped together -->
+                        
+                            <h4 id="HandshakeConnection">
+                                <span class="fw-struct sm-icon"></span>
+                                public struct HandshakeConnection
+                            </h4>
+                            
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Represent the details needed before the Handshake is done.
+                                </p>
+                            
+                            
+                                <p>
+                                    <label class="table-header-text">Fields:</label>
+                                <table>
+                                    <tr>
+                                        <th class="col-md-4">Field Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
+                                    </tr>
                                     
-                                </ul>
-                            </div>
+                                        <tr>
+                                            <td class="col-md-4">connectionID</td>
+                                            <td class="col-md-2">string</td>
+                                            <td class="col-md-6">ID of the connection</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">isSecure</td>
+                                            <td class="col-md-2">boolean</td>
+                                            <td class="col-md-6">True if the connection is secured</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">upgradeHeaders</td>
+                                            <td class="col-md-2">map</td>
+                                            <td class="col-md-6">Received headers in the connection upgrade</td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                            
+                                <div class="function-wrapper">
+                                    <ul>
+                                        
+                                            <li>
+                                                <h4 id="cancelHandshake">
+                                                    <span class=fw-function></span>
+                                                    <span class="thin-text light-gray">&lt; HandshakeConnection &gt;</span>
+                                                    cancelHandshake
+                                                    ( int statusCode , string reason )
+                                                    
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Cancels the handshake
+                                                    </p>
+                                                
+                                                
+                                                    <p>
+                                                        <label class="table-header-text">Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Parameter Name</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4">statusCode</td>
+                                                                <td class="col-md-2">int</td>
+                                                                <td class="col-md-6">Status code for closing the connection</td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4">reason</td>
+                                                                <td class="col-md-2">string</td>
+                                                                <td class="col-md-6">Reason for closing the connection</td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                                
+                                            </li>
+                                        
+                                    </ul>
+                                </div>
+                            
                         
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
+                        <!-- Connectors and its actions -->
+                        
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
                 
-                    <!-- Function -->
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                        <h4 id="clientService">
-                            <span class="fw-annotation sm-icon"></span>
-                            public annotation clientService
-                        </h4>
+                    <div class="construct-wrapper">
+                        <!-- Function -->
                         
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Service annotation to mark a WS service as a client service for a WS client connector.
-                            </p>
+                        <!-- Struct-binded functions grouped together -->
                         
+                            <h4 id="PingFrame">
+                                <span class="fw-struct sm-icon"></span>
+                                public struct PingFrame
+                            </h4>
+                            
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Represents a WebSocket ping frame in Ballerina.
+                                </p>
+                            
+                            
+                                <p>
+                                    <label class="table-header-text">Fields:</label>
+                                <table>
+                                    <tr>
+                                        <th class="col-md-4">Field Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
+                                    </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">data</td>
+                                            <td class="col-md-2">blob</td>
+                                            <td class="col-md-6">Data of the frame</td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                            
                         
-                    
-                    <!-- Global Variables-->
-                    
+                        <!-- Connectors and its actions -->
+                        
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
                 
-                    <!-- Function -->
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                        <h4 id="configuration">
-                            <span class="fw-annotation sm-icon"></span>
-                            public annotation configuration
-                        </h4>
+                    <div class="construct-wrapper">
+                        <!-- Function -->
                         
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Configuration for a WebSocket service.
-                            </p>
+                        <!-- Struct-binded functions grouped together -->
                         
+                            <h4 id="PongFrame">
+                                <span class="fw-struct sm-icon"></span>
+                                public struct PongFrame
+                            </h4>
+                            
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Represents a WebSocket pong frame in Ballerina.
+                                </p>
+                            
+                            
+                                <p>
+                                    <label class="table-header-text">Fields:</label>
+                                <table>
+                                    <tr>
+                                        <th class="col-md-4">Field Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
+                                    </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">data</td>
+                                            <td class="col-md-2">blob</td>
+                                            <td class="col-md-6">Data of the frame</td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                            
                         
-                            <p>
-                                <label class="table-header-text">Attributes:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Attribute Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">basePath</td>
-                                        <th class="col-md-2">string</th>
-                                        <td class="col-md-6"> Path of the WebSocket service</td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">subProtocols</td>
-                                        <th class="col-md-2">string[]</th>
-                                        <td class="col-md-6"> Negotiable sub protocol by the service</td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">host</td>
-                                        <th class="col-md-2">string</th>
-                                        <td class="col-md-6"> Host of the service</td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">port</td>
-                                        <th class="col-md-2">int</th>
-                                        <td class="col-md-6"> Port number of the service</td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">wssPort</td>
-                                        <th class="col-md-2">int</th>
-                                        <td class="col-md-6"> WSS port number of service</td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">idleTimeoutInSeconds</td>
-                                        <th class="col-md-2">int</th>
-                                        <td class="col-md-6"> Idle timeout for the client connection. This can be triggered by putting onIdleTimeout resource in WS service.</td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">keyStoreFile</td>
-                                        <th class="col-md-2">string</th>
-                                        <td class="col-md-6"> File path to keystore file</td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">keyStorePassword</td>
-                                        <th class="col-md-2">string</th>
-                                        <td class="col-md-6"> The keystore password</td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">certPassword</td>
-                                        <th class="col-md-2">string</th>
-                                        <td class="col-md-6"> The certificate password</td>
-                                    </tr>
-                                
-                            </table>
-                            </p>
+                        <!-- Connectors and its actions -->
                         
-                    
-                    <!-- Global Variables-->
-                    
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
+                
+                    <div class="construct-wrapper">
+                        <!-- Function -->
+                        
+                        <!-- Struct-binded functions grouped together -->
+                        
+                            <h4 id="TextFrame">
+                                <span class="fw-struct sm-icon"></span>
+                                public struct TextFrame
+                            </h4>
+                            
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Represents a WebSocket text frame in Ballerina.
+                                </p>
+                            
+                            
+                                <p>
+                                    <label class="table-header-text">Fields:</label>
+                                <table>
+                                    <tr>
+                                        <th class="col-md-4">Field Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
+                                    </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">text</td>
+                                            <td class="col-md-2">string</td>
+                                            <td class="col-md-6">Text in the text frame</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">isFinalFragment</td>
+                                            <td class="col-md-2">boolean</td>
+                                            <td class="col-md-6">Check whether this is the final frame. True if the frame is final frame.</td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                            
+                        
+                        <!-- Connectors and its actions -->
+                        
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
+                
+                    <div class="construct-wrapper">
+                        <!-- Function -->
+                        
+                        <!-- Struct-binded functions grouped together -->
+                        
+                            <h4 id="WsConnectorError">
+                                <span class="fw-struct sm-icon"></span>
+                                public struct WsConnectorError
+                            </h4>
+                            
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Error struct for WebSocket connection errors
+                                </p>
+                            
+                            
+                                <p>
+                                    <label class="table-header-text">Fields:</label>
+                                <table>
+                                    <tr>
+                                        <th class="col-md-4">Field Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
+                                    </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">msg</td>
+                                            <td class="col-md-2">string</td>
+                                            <td class="col-md-6">An error message explaining the error</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">cause</td>
+                                            <td class="col-md-2">error</td>
+                                            <td class="col-md-6">The error that caused HttpConnectorError to be returned</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">stackTrace</td>
+                                            <td class="col-md-2">StackFrame[]</td>
+                                            <td class="col-md-6">Represents the invocation stack if WsConnectorError is thrown</td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                            
+                        
+                        <!-- Connectors and its actions -->
+                        
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
+                
+                    <div class="construct-wrapper">
+                        <!-- Function -->
+                        
+                        <!-- Struct-binded functions grouped together -->
+                        
+                        <!-- Connectors and its actions -->
+                        
+                            <h4 id="WsClient">
+                                <span class="fw-connector sm-icon"></span>
+                                public connector WsClient ( string url , string callbackService )
+                            </h4>
+                            
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>WebSocket client connector for connecting to a WebSocket backend
+                                </p>
+                            
+                            
+                                <p>
+                                    <label class="table-header-text">Parameters:</label>
+                                <table>
+                                    <tr>
+                                        <th class="col-md-4">Parameter Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
+                                    </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">url</td>
+                                            <td class="col-md-2">string</td>
+                                            <td class="col-md-6">WebSocket URL for the backend</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">callbackService</td>
+                                            <td class="col-md-2">string</td>
+                                            <td class="col-md-6">Callback service to listen to the incoming messages from the backend</td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                            
+                                <div class="function-wrapper">
+                                    <h4>Actions:</h4>
+                                    <ul>
+                                        
+                                            <li>
+                                                <h4 id="connect">
+                                                    <span class=fw-action></span>
+                                                    <span class="thin-text light-gray">< WsClient ></span>
+                                                    connect
+                                                    ( ClientConnectorConfig config )
+                                                    
+                                                    ( Connection , WsConnectorError )
+                                                    
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Connect to remote endpoint
+                                                    </p>
+                                                
+                                                
+                                                    <p>
+                                                        <label class="table-header-text">Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Parameter Name</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4">config</td>
+                                                                <td class="col-md-2">ClientConnectorConfig</td>
+                                                                <td class="col-md-6">ClientConnectorConfig for the connection</td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                                
+                                                    <p>
+                                                        <label class="table-header-text">Return Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Return Variable</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4"></td>
+                                                                <td class="col-md-2">Connection</td>
+                                                                <td class="col-md-6"></td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4"></td>
+                                                                <td class="col-md-2">WsConnectorError</td>
+                                                                <td class="col-md-6"></td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <h4 id="connectWithDefault">
+                                                    <span class=fw-action></span>
+                                                    <span class="thin-text light-gray">< WsClient ></span>
+                                                    connectWithDefault
+                                                    (  )
+                                                    
+                                                    ( Connection , WsConnectorError )
+                                                    
+                                                </h4>
+                                                
+                                                    <p>
+                                                        <span class="fw-right gray xs-icon"></span>Connect to remote endpoint with default configuration
+                                                    </p>
+                                                
+                                                
+                                                
+                                                    <p>
+                                                        <label class="table-header-text">Return Parameters:</label>
+                                                    <table>
+                                                        <tr>
+                                                            <th class="col-md-4">Return Variable</th>
+                                                            <th class="col-md-2">Data Type</th>
+                                                            <th class="col-md-6">Description</th>
+                                                        </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4"></td>
+                                                                <td class="col-md-2">Connection</td>
+                                                                <td class="col-md-6"></td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td class="col-md-4"></td>
+                                                                <td class="col-md-2">WsConnectorError</td>
+                                                                <td class="col-md-6"></td>
+                                                            </tr>
+                                                        
+                                                    </table>
+                                                    </p>
+                                                
+                                            </li>
+                                        
+                                    </ul>
+                                </div>
+                            
+                        
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
+                
+                    <div class="construct-wrapper">
+                        <!-- Function -->
+                        
+                        <!-- Struct-binded functions grouped together -->
+                        
+                        <!-- Connectors and its actions -->
+                        
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                            <h4 id="clientService">
+                                <span class="fw-annotation sm-icon"></span>
+                                public annotation clientService
+                            </h4>
+                            
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Service annotation to mark a WS service as a client service for a WS client connector.
+                                </p>
+                            
+                            
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
+                
+                    <div class="construct-wrapper">
+                        <!-- Function -->
+                        
+                        <!-- Struct-binded functions grouped together -->
+                        
+                        <!-- Connectors and its actions -->
+                        
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                            <h4 id="configuration">
+                                <span class="fw-annotation sm-icon"></span>
+                                public annotation configuration
+                            </h4>
+                            
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Configuration for a WebSocket service.
+                                </p>
+                            
+                            
+                                <p>
+                                    <label class="table-header-text">Attributes:</label>
+                                <table>
+                                    <tr>
+                                        <th class="col-md-4">Attribute Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
+                                    </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">basePath</td>
+                                            <th class="col-md-2">string</th>
+                                            <td class="col-md-6"> Path of the WebSocket service</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">subProtocols</td>
+                                            <th class="col-md-2">string[]</th>
+                                            <td class="col-md-6"> Negotiable sub protocol by the service</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">host</td>
+                                            <th class="col-md-2">string</th>
+                                            <td class="col-md-6"> Host of the service</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">port</td>
+                                            <th class="col-md-2">int</th>
+                                            <td class="col-md-6"> Port number of the service</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">wssPort</td>
+                                            <th class="col-md-2">int</th>
+                                            <td class="col-md-6"> WSS port number of service</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">idleTimeoutInSeconds</td>
+                                            <th class="col-md-2">int</th>
+                                            <td class="col-md-6"> Idle timeout for the client connection. This can be triggered by putting onIdleTimeout resource in WS service.</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">keyStoreFile</td>
+                                            <th class="col-md-2">string</th>
+                                            <td class="col-md-6"> File path to keystore file</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">keyStorePassword</td>
+                                            <th class="col-md-2">string</th>
+                                            <td class="col-md-6"> The keystore password</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">certPassword</td>
+                                            <th class="col-md-2">string</th>
+                                            <td class="col-md-6"> The certificate password</td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
                 
             </div>
         </div>

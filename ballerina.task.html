@@ -8,11 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="docerina-theme/libs/bootstrap-3.0.0/css/bootstrap.min.css">
 
-    <!-- custom CSS -->
-    <link rel="stylesheet" href="docerina-theme/css/main.css">
-
     <!-- Ballerina font CSS -->
     <link rel="stylesheet" href="docerina-theme/css/font-ballerina/css/font-ballerina.css">
+
+    <!-- Roboto font CSS -->
+    <link rel="stylesheet" href="docerina-theme/css/roboto.css">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="docerina-theme/css/main.css">
 
     <!--Jquery JS-->
     <script src="docerina-theme/js/jquery.min.js"></script>
@@ -329,215 +332,223 @@
                     <span class="bold">ballerina.task</span> package
                 </h3>
                 
-                    <!-- Function -->
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                        <h4 id="Anonymus Struct">
-                            <span class="fw-struct sm-icon"></span>
-                            public struct Anonymus Struct
-                        </h4>
+                    <div class="construct-wrapper">
+                        <!-- Function -->
                         
+                        <!-- Struct-binded functions grouped together -->
                         
-                            <p>
-                                <label class="table-header-text">Fields:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Field Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
-                                
+                            <h4 id="Anonymus Struct">
+                                <span class="fw-struct sm-icon"></span>
+                                public struct Anonymus Struct
+                            </h4>
+                            
+                            
+                                <p>
+                                    <label class="table-header-text">Fields:</label>
+                                <table>
                                     <tr>
-                                        <td class="col-md-4">delay</td>
-                                        <td class="col-md-2">int</td>
-                                        <td class="col-md-6"></td>
+                                        <th class="col-md-4">Field Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
                                     </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">interval</td>
-                                        <td class="col-md-2">int</td>
-                                        <td class="col-md-6"></td>
-                                    </tr>
-                                
-                            </table>
-                            </p>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">delay</td>
+                                            <td class="col-md-2">int</td>
+                                            <td class="col-md-6"></td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">interval</td>
+                                            <td class="col-md-2">int</td>
+                                            <td class="col-md-6"></td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                            
                         
+                        <!-- Connectors and its actions -->
                         
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
                 
-                    <!-- Function -->
-                    
-                        <h4 id="scheduleAppointment">
-                            <span class="fw-function sm-icon"> </span>
-                            public function scheduleAppointment
-                            ( function()returns(error) onTrigger , function(error) onError , string scheduleCronExpression )
+                    <div class="construct-wrapper">
+                        <!-- Function -->
+                        
+                            <h4 id="scheduleAppointment">
+                                <span class="fw-function sm-icon"> </span>
+                                public function scheduleAppointment
+                                ( function()returns(error) onTrigger , function(error) onError , string scheduleCronExpression )
+                                
+                                ( string taskId , error e )
+                                
+                            </h4>
                             
-                            ( string taskId , error e )
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Schedules an appointment task
+                                </p>
                             
-                        </h4>
-                        
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Schedules an appointment task
-                            </p>
-                        
-                        
-                            <p>
-                                <label class="table-header-text">Parameters:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Parameter Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
-                                
+                            
+                                <p>
+                                    <label class="table-header-text">Parameters:</label>
+                                <table>
                                     <tr>
-                                        <td class="col-md-4">onTrigger</td>
-                                        <td class="col-md-2">function()returns(error)</td>
-                                        <td class="col-md-6">The function which gets called when the appointment falls due</td>
+                                        <th class="col-md-4">Parameter Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
                                     </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">onError</td>
-                                        <td class="col-md-2">function(error)</td>
-                                        <td class="col-md-6">The function that gets called if the onTrigger function returns an error</td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">scheduleCronExpression</td>
-                                        <td class="col-md-2">string</td>
-                                        <td class="col-md-6">Specifies the Cron expression of the schedule</td>
-                                    </tr>
-                                
-                            </table>
-                            </p>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">onTrigger</td>
+                                            <td class="col-md-2">function()returns(error)</td>
+                                            <td class="col-md-6">The function which gets called when the appointment falls due</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">onError</td>
+                                            <td class="col-md-2">function(error)</td>
+                                            <td class="col-md-6">The function that gets called if the onTrigger function returns an error</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">scheduleCronExpression</td>
+                                            <td class="col-md-2">string</td>
+                                            <td class="col-md-6">Specifies the Cron expression of the schedule</td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                            
                         
+                        <!-- Struct-binded functions grouped together -->
                         
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
+                        <!-- Connectors and its actions -->
+                        
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
                 
-                    <!-- Function -->
-                    
-                        <h4 id="scheduleTimer">
-                            <span class="fw-function sm-icon"> </span>
-                            public function scheduleTimer
-                            ( function()returns(error) onTrigger , function(error) onError , struct {int delay, int interval} schedule )
+                    <div class="construct-wrapper">
+                        <!-- Function -->
+                        
+                            <h4 id="scheduleTimer">
+                                <span class="fw-function sm-icon"> </span>
+                                public function scheduleTimer
+                                ( function()returns(error) onTrigger , function(error) onError , struct {int delay, int interval} schedule )
+                                
+                                ( string taskId , error e )
+                                
+                            </h4>
                             
-                            ( string taskId , error e )
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Schedules a timer task
+                                </p>
                             
-                        </h4>
-                        
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Schedules a timer task
-                            </p>
-                        
-                        
-                            <p>
-                                <label class="table-header-text">Parameters:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Parameter Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
-                                
+                            
+                                <p>
+                                    <label class="table-header-text">Parameters:</label>
+                                <table>
                                     <tr>
-                                        <td class="col-md-4">onTrigger</td>
-                                        <td class="col-md-2">function()returns(error)</td>
-                                        <td class="col-md-6">The function which gets called when the timer goes off</td>
+                                        <th class="col-md-4">Parameter Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
                                     </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">onError</td>
-                                        <td class="col-md-2">function(error)</td>
-                                        <td class="col-md-6">The function that gets called if the onTrigger function returns an error</td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td class="col-md-4">schedule</td>
-                                        <td class="col-md-2">struct {int delay, int interval}</td>
-                                        <td class="col-md-6">Specifies the initial delay and interval of the timer task</td>
-                                    </tr>
-                                
-                            </table>
-                            </p>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">onTrigger</td>
+                                            <td class="col-md-2">function()returns(error)</td>
+                                            <td class="col-md-6">The function which gets called when the timer goes off</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">onError</td>
+                                            <td class="col-md-2">function(error)</td>
+                                            <td class="col-md-6">The function that gets called if the onTrigger function returns an error</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">schedule</td>
+                                            <td class="col-md-2">struct {int delay, int interval}</td>
+                                            <td class="col-md-6">Specifies the initial delay and interval of the timer task</td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                            
                         
+                        <!-- Struct-binded functions grouped together -->
                         
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
+                        <!-- Connectors and its actions -->
+                        
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
                 
-                    <!-- Function -->
-                    
-                        <h4 id="stopTask">
-                            <span class="fw-function sm-icon"> </span>
-                            public function stopTask
-                            ( string taskID )
-                            
-                            ( error )
-                            
-                        </h4>
+                    <div class="construct-wrapper">
+                        <!-- Function -->
                         
-                            <p>
-                                <span class="fw-right gray xs-icon"></span>Stops the timer task with ID taskID
-                            </p>
-                        
-                        
-                            <p>
-                                <label class="table-header-text">Parameters:</label>
-                            <table>
-                                <tr>
-                                    <th class="col-md-4">Parameter Name</th>
-                                    <th class="col-md-2">Data Type</th>
-                                    <th class="col-md-6">Description</th>
-                                </tr>
+                            <h4 id="stopTask">
+                                <span class="fw-function sm-icon"> </span>
+                                public function stopTask
+                                ( string taskID )
                                 
+                                ( error )
+                                
+                            </h4>
+                            
+                                <p>
+                                    <span class="fw-right gray xs-icon"></span>Stops the timer task with ID taskID
+                                </p>
+                            
+                            
+                                <p>
+                                    <label class="table-header-text">Parameters:</label>
+                                <table>
                                     <tr>
-                                        <td class="col-md-4">taskID</td>
-                                        <td class="col-md-2">string</td>
-                                        <td class="col-md-6">The unique ID of the timer task that has to be stopped</td>
+                                        <th class="col-md-4">Parameter Name</th>
+                                        <th class="col-md-2">Data Type</th>
+                                        <th class="col-md-6">Description</th>
                                     </tr>
-                                
-                            </table>
-                            </p>
+                                    
+                                        <tr>
+                                            <td class="col-md-4">taskID</td>
+                                            <td class="col-md-2">string</td>
+                                            <td class="col-md-6">The unique ID of the timer task that has to be stopped</td>
+                                        </tr>
+                                    
+                                </table>
+                                </p>
+                            
+                            
                         
+                        <!-- Struct-binded functions grouped together -->
                         
-                    
-                    <!-- Struct-binded functions grouped together -->
-                    
-                    <!-- Connectors and its actions -->
-                    
-                    <!-- Enums-->
-                    
-                    <!-- Annotations-->
-                    
-                    <!-- Global Variables-->
-                    
+                        <!-- Connectors and its actions -->
+                        
+                        <!-- Enums-->
+                        
+                        <!-- Annotations-->
+                        
+                        <!-- Global Variables-->
+                        
+                    </div>
                 
             </div>
         </div>
