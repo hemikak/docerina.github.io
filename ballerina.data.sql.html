@@ -1,0 +1,1409 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="docerina-theme/libs/bootstrap-3.0.0/css/bootstrap.min.css">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="docerina-theme/css/main.css">
+
+    <!-- Ballerina font CSS -->
+    <link rel="stylesheet" href="docerina-theme/css/font-ballerina/css/font-ballerina.css">
+
+    <!--Jquery JS-->
+    <script src="docerina-theme/js/jquery.min.js"></script>
+
+    <!--Bootstrap JS-->
+    <script src="docerina-theme/libs/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+
+    <!--Docerina JS-->
+    <script src="docerina-theme/js/docerina.js"></script>
+
+    <title>Ballerina API Documentation</title>
+</head>
+<body data-spy="scroll" data-target=".constructs-wrapper">
+<!-- Fixed navbar -->
+<div id="header" class="navbar navbar-fixed-top">
+    <div class="container-full">
+        <a href="index.html"><strong>Ballerina</strong> API Documentation</a>
+    </div>
+</div>
+<div class="container-full">
+    <div class="row docerina-content">
+        <div id="packageList" class="col-sm-3 col-lg-2">
+            <nav class="navbar navbar-default navbar-fixed-side">
+                <div class="container">
+                    <div class="navbar-header">
+                        <h3><span class="bold">Ballerina</span> Packages</h3>
+                    </div>
+                    <div class="collapse navbar-collapse package-list-wrapper">
+                        
+                            <ul class="nav navbar-nav package-name-ul ">
+                                <li>
+                                    <!--Package Name-->
+                                    
+                                        <a href="ballerina.builtin.html">ballerina.<span
+                                                class="bold">builtin</span></a>
+                                    
+                                </li>
+                            </ul>
+                        
+                            <ul class="nav navbar-nav package-name-ul ">
+                                <li>
+                                    <!--Package Name-->
+                                    
+                                        <a href="ballerina.caching.html">ballerina.<span
+                                                class="bold">caching</span></a>
+                                    
+                                </li>
+                            </ul>
+                        
+                            <ul class="nav navbar-nav package-name-ul ">
+                                <li>
+                                    <!--Package Name-->
+                                    
+                                        <a href="ballerina.config.html">ballerina.<span
+                                                class="bold">config</span></a>
+                                    
+                                </li>
+                            </ul>
+                        
+                            <ul class="nav navbar-nav package-name-ul active">
+                                <li>
+                                    <!--Package Name-->
+                                    
+                                        <a>ballerina.<span class="bold">data.sql</a>
+                                        <div class="constructs-wrapper">
+                                            <!--Construct of Package-->
+                                            <ul class="constructs-ul">
+                                                
+                                                    <li>
+                                                        <a href="#ConnectionProperties">
+                                                            <div class="construct-icon">
+                                                                <span class="fw-struct"> </span>
+                                                            </div>
+                                                            <div class="construct-name">
+                                                                ConnectionProperties
+                                                                
+                                                                
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    
+                                                
+                                                    <li>
+                                                        <a href="#Parameter">
+                                                            <div class="construct-icon">
+                                                                <span class="fw-struct"> </span>
+                                                            </div>
+                                                            <div class="construct-name">
+                                                                Parameter
+                                                                
+                                                                
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    
+                                                
+                                                    <li>
+                                                        <a href="#ClientConnector">
+                                                            <div class="construct-icon">
+                                                                <span class="fw-connector"> </span>
+                                                            </div>
+                                                            <div class="construct-name">
+                                                                ClientConnector
+                                                                
+                                                                
+                                                                    (DB dbType
+                                                                    ,string hostOrPath
+                                                                    ,int port
+                                                                    ,string dbName
+                                                                    ,string username
+                                                                    ,string password
+                                                                    ,ConnectionProperties options
+                                                                    ,)
+                                                                
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    
+                                                        <ul class="construct-inner-items-ul">
+                                                            <li>
+                                                                <a href="#batchUpdate">
+                                                                    <div class="construct-icon">
+                                                                        <span class="fw-action"> </span>
+                                                                    </div>
+                                                                    <div class="construct-name">
+                                                                        batchUpdate
+                                                                        ( string query , Parameter[][] parameters )
+                                                                        
+                                                                        ( int[] )
+                                                                        
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    
+                                                        <ul class="construct-inner-items-ul">
+                                                            <li>
+                                                                <a href="#call">
+                                                                    <div class="construct-icon">
+                                                                        <span class="fw-action"> </span>
+                                                                    </div>
+                                                                    <div class="construct-name">
+                                                                        call
+                                                                        ( string query , Parameter[] parameters , type structType )
+                                                                        
+                                                                        ( datatable )
+                                                                        
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    
+                                                        <ul class="construct-inner-items-ul">
+                                                            <li>
+                                                                <a href="#close">
+                                                                    <div class="construct-icon">
+                                                                        <span class="fw-action"> </span>
+                                                                    </div>
+                                                                    <div class="construct-name">
+                                                                        close
+                                                                        (  )
+                                                                        
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    
+                                                        <ul class="construct-inner-items-ul">
+                                                            <li>
+                                                                <a href="#select">
+                                                                    <div class="construct-icon">
+                                                                        <span class="fw-action"> </span>
+                                                                    </div>
+                                                                    <div class="construct-name">
+                                                                        select
+                                                                        ( string query , Parameter[] parameters , type structType )
+                                                                        
+                                                                        ( datatable )
+                                                                        
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    
+                                                        <ul class="construct-inner-items-ul">
+                                                            <li>
+                                                                <a href="#update">
+                                                                    <div class="construct-icon">
+                                                                        <span class="fw-action"> </span>
+                                                                    </div>
+                                                                    <div class="construct-name">
+                                                                        update
+                                                                        ( string query , Parameter[] parameters )
+                                                                        
+                                                                        ( int )
+                                                                        
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    
+                                                        <ul class="construct-inner-items-ul">
+                                                            <li>
+                                                                <a href="#updateWithGeneratedKeys">
+                                                                    <div class="construct-icon">
+                                                                        <span class="fw-action"> </span>
+                                                                    </div>
+                                                                    <div class="construct-name">
+                                                                        updateWithGeneratedKeys
+                                                                        ( string query , Parameter[] parameters , string[] keyColumns )
+                                                                        
+                                                                        ( int , string[] )
+                                                                        
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    
+                                                
+                                                    <li>
+                                                        <a href="#DB">
+                                                            <div class="construct-icon">
+                                                                <span class="fw-constant"> </span>
+                                                            </div>
+                                                            <div class="construct-name">
+                                                                DB
+                                                                
+                                                                
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    
+                                                
+                                                    <li>
+                                                        <a href="#Direction">
+                                                            <div class="construct-icon">
+                                                                <span class="fw-constant"> </span>
+                                                            </div>
+                                                            <div class="construct-name">
+                                                                Direction
+                                                                
+                                                                
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    
+                                                
+                                                    <li>
+                                                        <a href="#Type">
+                                                            <div class="construct-icon">
+                                                                <span class="fw-constant"> </span>
+                                                            </div>
+                                                            <div class="construct-name">
+                                                                Type
+                                                                
+                                                                
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    
+                                                
+                                            </ul>
+                                        </div>
+                                    
+                                </li>
+                            </ul>
+                        
+                            <ul class="nav navbar-nav package-name-ul ">
+                                <li>
+                                    <!--Package Name-->
+                                    
+                                        <a href="ballerina.file.html">ballerina.<span
+                                                class="bold">file</span></a>
+                                    
+                                </li>
+                            </ul>
+                        
+                            <ul class="nav navbar-nav package-name-ul ">
+                                <li>
+                                    <!--Package Name-->
+                                    
+                                        <a href="ballerina.io.html">ballerina.<span
+                                                class="bold">io</span></a>
+                                    
+                                </li>
+                            </ul>
+                        
+                            <ul class="nav navbar-nav package-name-ul ">
+                                <li>
+                                    <!--Package Name-->
+                                    
+                                        <a href="ballerina.log.html">ballerina.<span
+                                                class="bold">log</span></a>
+                                    
+                                </li>
+                            </ul>
+                        
+                            <ul class="nav navbar-nav package-name-ul ">
+                                <li>
+                                    <!--Package Name-->
+                                    
+                                        <a href="ballerina.math.html">ballerina.<span
+                                                class="bold">math</span></a>
+                                    
+                                </li>
+                            </ul>
+                        
+                            <ul class="nav navbar-nav package-name-ul ">
+                                <li>
+                                    <!--Package Name-->
+                                    
+                                        <a href="ballerina.net.http.html">ballerina.<span
+                                                class="bold">net.http</span></a>
+                                    
+                                </li>
+                            </ul>
+                        
+                            <ul class="nav navbar-nav package-name-ul ">
+                                <li>
+                                    <!--Package Name-->
+                                    
+                                        <a href="ballerina.net.http.swagger.html">ballerina.<span
+                                                class="bold">net.http.swagger</span></a>
+                                    
+                                </li>
+                            </ul>
+                        
+                            <ul class="nav navbar-nav package-name-ul ">
+                                <li>
+                                    <!--Package Name-->
+                                    
+                                        <a href="ballerina.net.uri.html">ballerina.<span
+                                                class="bold">net.uri</span></a>
+                                    
+                                </li>
+                            </ul>
+                        
+                            <ul class="nav navbar-nav package-name-ul ">
+                                <li>
+                                    <!--Package Name-->
+                                    
+                                        <a href="ballerina.net.ws.html">ballerina.<span
+                                                class="bold">net.ws</span></a>
+                                    
+                                </li>
+                            </ul>
+                        
+                            <ul class="nav navbar-nav package-name-ul ">
+                                <li>
+                                    <!--Package Name-->
+                                    
+                                        <a href="ballerina.os.html">ballerina.<span
+                                                class="bold">os</span></a>
+                                    
+                                </li>
+                            </ul>
+                        
+                            <ul class="nav navbar-nav package-name-ul ">
+                                <li>
+                                    <!--Package Name-->
+                                    
+                                        <a href="ballerina.runtime.html">ballerina.<span
+                                                class="bold">runtime</span></a>
+                                    
+                                </li>
+                            </ul>
+                        
+                            <ul class="nav navbar-nav package-name-ul ">
+                                <li>
+                                    <!--Package Name-->
+                                    
+                                        <a href="ballerina.security.crypto.html">ballerina.<span
+                                                class="bold">security.crypto</span></a>
+                                    
+                                </li>
+                            </ul>
+                        
+                            <ul class="nav navbar-nav package-name-ul ">
+                                <li>
+                                    <!--Package Name-->
+                                    
+                                        <a href="ballerina.task.html">ballerina.<span
+                                                class="bold">task</span></a>
+                                    
+                                </li>
+                            </ul>
+                        
+                            <ul class="nav navbar-nav package-name-ul ">
+                                <li>
+                                    <!--Package Name-->
+                                    
+                                        <a href="ballerina.test.html">ballerina.<span
+                                                class="bold">test</span></a>
+                                    
+                                </li>
+                            </ul>
+                        
+                            <ul class="nav navbar-nav package-name-ul ">
+                                <li>
+                                    <!--Package Name-->
+                                    
+                                        <a href="ballerina.user.html">ballerina.<span
+                                                class="bold">user</span></a>
+                                    
+                                </li>
+                            </ul>
+                        
+                            <ul class="nav navbar-nav package-name-ul ">
+                                <li>
+                                    <!--Package Name-->
+                                    
+                                        <a href="ballerina.util.html">ballerina.<span
+                                                class="bold">util</span></a>
+                                    
+                                </li>
+                            </ul>
+                        
+                            <ul class="nav navbar-nav package-name-ul ">
+                                <li>
+                                    <!--Package Name-->
+                                    
+                                        <a href="ballerina.util.arrays.html">ballerina.<span
+                                                class="bold">util.arrays</span></a>
+                                    
+                                </li>
+                            </ul>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Main Content on the right-->
+        <div class="col-sm-9 col-lg-10 content-wrapper main-wrapper">
+            <div id="content">
+                <h3 class="thin-text padding-bottom">
+                    <span class="bold">ballerina.data.sql</span> package
+                </h3>
+                
+                    <!-- Function -->
+                    
+                    <!-- Struct-binded functions grouped together -->
+                    
+                        <h4 id="ConnectionProperties">
+                            <span class="fw-struct sm-icon"></span>
+                            public struct ConnectionProperties
+                        </h4>
+                        <p><span class="fw-right gray xs-icon"></span>ConnectionProperties structs represents the properties which are used to configure DB connection pool</p>
+                        
+                            <p>
+                                <label class="table-header-text">Fields:</label>
+                            <table>
+                                <tr>
+                                    <th>Field Name</th>
+                                    <th>Data Type</th>
+                                    <th>Description</th>
+                                </tr>
+                                
+                                    <tr>
+                                        <td>url</td>
+                                        <td>string</td>
+                                        <td>Platform independent DB access URL</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>dataSourceClassName</td>
+                                        <td>string</td>
+                                        <td>Name of the DataSource class provided by the JDBC driver</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>connectionTestQuery</td>
+                                        <td>string</td>
+                                        <td>Query that will be executed to validate that the connection to the database is still alive</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>poolName</td>
+                                        <td>string</td>
+                                        <td>User-defined name for the connection pool and appears mainly in logging</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>catalog</td>
+                                        <td>string</td>
+                                        <td>Catalog of connections created by this pool</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>connectionInitSql</td>
+                                        <td>string</td>
+                                        <td>SQL statement that will be executed after every new connection creation before adding it to the pool</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>driverClassName</td>
+                                        <td>string</td>
+                                        <td>Fully qualified Java class name of the JDBC driver to be used</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>transactionIsolation</td>
+                                        <td>string</td>
+                                        <td>Transaction isolation level of connections returned from the pool. The supported values are TRANSACTION_READ_UNCOMMITTED, TRANSACTION_READ_COMMITTED, TRANSACTION_REPEATABLE_READ and TRANSACTION_SERIALIZABLE</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>autoCommit</td>
+                                        <td>boolean</td>
+                                        <td>Auto-commit behavior of connections returned from the pool</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>isolateInternalQueries</td>
+                                        <td>boolean</td>
+                                        <td>Determines whether HikariCP isolates internal pool queries, such as the connection alive test, in their own transaction</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>allowPoolSuspension</td>
+                                        <td>boolean</td>
+                                        <td>Whether the pool can be suspended and resumed through JMX</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>readOnly</td>
+                                        <td>boolean</td>
+                                        <td>Whether Connections obtained from the pool are in read-only mode by default</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>isXA</td>
+                                        <td>boolean</td>
+                                        <td>Whether Connections are used for a distributed transaction</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>maximumPoolSize</td>
+                                        <td>int</td>
+                                        <td>Maximum size that the pool is allowed to reach, including both idle and in-use connections</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>connectionTimeout</td>
+                                        <td>int</td>
+                                        <td>Maximum number of milliseconds that a client will wait for a connection from the pool</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>idleTimeout</td>
+                                        <td>int</td>
+                                        <td>Maximum amount of time that a connection is allowed to sit idle in the pool</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>minimumIdle</td>
+                                        <td>int</td>
+                                        <td>Minimum number of idle connections that pool tries to maintain in the pool</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>maxLifetime</td>
+                                        <td>int</td>
+                                        <td>Maximum lifetime of a connection in the pool</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>validationTimeout</td>
+                                        <td>int</td>
+                                        <td>Maximum amount of time that a connection will be tested for aliveness</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>leakDetectionThreshold</td>
+                                        <td>int</td>
+                                        <td>Amount of time that a connection can be out of the pool before a message is logged indicating a possible connection leak</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>datasourceProperties</td>
+                                        <td>map</td>
+                                        <td>Data source specific properties which are used along with the dataSourceClassName</td>
+                                    </tr>
+                                
+                            </table>
+                            </p>
+                        
+                        
+                    
+                    <!-- Connectors and its actions -->
+                    
+                    <!-- Enums-->
+                    
+                    <!-- Annotations-->
+                    
+                    <!-- Global Variables-->
+                    
+                
+                    <!-- Function -->
+                    
+                    <!-- Struct-binded functions grouped together -->
+                    
+                        <h4 id="Parameter">
+                            <span class="fw-struct sm-icon"></span>
+                            public struct Parameter
+                        </h4>
+                        <p><span class="fw-right gray xs-icon"></span>Parameter struct represents a query parameter for the SQL queries specified in connector actions</p>
+                        
+                            <p>
+                                <label class="table-header-text">Fields:</label>
+                            <table>
+                                <tr>
+                                    <th>Field Name</th>
+                                    <th>Data Type</th>
+                                    <th>Description</th>
+                                </tr>
+                                
+                                    <tr>
+                                        <td>sqlType</td>
+                                        <td>Type</td>
+                                        <td>The data type of the corresponding SQL parameter</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>value</td>
+                                        <td>any</td>
+                                        <td>Value of paramter pass into the SQL query</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>direction</td>
+                                        <td>Direction</td>
+                                        <td>Direction of the SQL Parameter IN, OUT, or INOUT</td>
+                                    </tr>
+                                
+                            </table>
+                            </p>
+                        
+                        
+                    
+                    <!-- Connectors and its actions -->
+                    
+                    <!-- Enums-->
+                    
+                    <!-- Annotations-->
+                    
+                    <!-- Global Variables-->
+                    
+                
+                    <!-- Function -->
+                    
+                    <!-- Struct-binded functions grouped together -->
+                    
+                    <!-- Connectors and its actions -->
+                    
+                        <h4 id="ClientConnector">
+                            <span class="fw-connector sm-icon"></span>
+                            public connector ClientConnector ( DB dbType , string hostOrPath , int port , string dbName , string username , string password , ConnectionProperties options )
+                        </h4>
+                        <p><span class="fw-right gray xs-icon">The Client Connector for SQL databases.</p>
+                        
+                            <p>
+                                <label class="table-header-text">Parameters:</label>
+                            <table>
+                                <tr>
+                                    <th>Parameter Name</th>
+                                    <th>Data Type</th>
+                                    <th>Description</th>
+                                </tr>
+                                
+                                    <tr>
+                                        <td>dbType</td>
+                                        <td>DB</td>
+                                        <td>SQL database type</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>hostOrPath</td>
+                                        <td>string</td>
+                                        <td>Host name of the database or file path for file based database</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>port</td>
+                                        <td>int</td>
+                                        <td>Port of the database</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>dbName</td>
+                                        <td>string</td>
+                                        <td>Name of the database to connect</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>username</td>
+                                        <td>string</td>
+                                        <td>Username for the database connection</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>password</td>
+                                        <td>string</td>
+                                        <td>Password for the database connection</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>options</td>
+                                        <td>ConnectionProperties</td>
+                                        <td>ConnectionProperties for the connection pool configuration</td>
+                                    </tr>
+                                
+                            </table>
+                            </p>
+                        
+                        
+                            <div class="function-wrapper">
+                                <h4>Actions:</h4>
+                                <ul>
+                                    
+                                        <li>
+                                            <h4 id="batchUpdate">
+                                                <span class=fw-action></span>
+                                                <span class="thin-text light-gray">< ClientConnector ></span>
+                                                batchUpdate
+                                                ( string query , Parameter[][] parameters )
+                                                
+                                                ( int[] )
+                                                
+                                            </h4>
+                                            <p>
+                                                <span class="fw-right gray xs-icon"></span>
+                                                The batchUpdate action implementation for SQL connector to batch data insert.
+                                            </p>
+                                            
+                                                <p>
+                                                    <label class="table-header-text">Parameters:</label>
+                                                <table>
+                                                    <tr>
+                                                        <th>Parameter Name</th>
+                                                        <th>Data Type</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                    
+                                                        <tr>
+                                                            <td>query</td>
+                                                            <td>string</td>
+                                                            <td>SQL query to execute</td>
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            <td>parameters</td>
+                                                            <td>Parameter[][]</td>
+                                                            <td>Parameter array used with the SQL query</td>
+                                                        </tr>
+                                                    
+                                                </table>
+                                                </p>
+                                            
+                                            
+                                                <p>
+                                                    <label class="table-header-text">Return Parameters:</label>
+                                                <table>
+                                                    <tr>
+                                                        <th>Return Variable</th>
+                                                        <th>Data Type</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                    
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>int[]</td>
+                                                            <td></td>
+                                                        </tr>
+                                                    
+                                                </table>
+                                                </p>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            <h4 id="call">
+                                                <span class=fw-action></span>
+                                                <span class="thin-text light-gray">< ClientConnector ></span>
+                                                call
+                                                ( string query , Parameter[] parameters , type structType )
+                                                
+                                                ( datatable )
+                                                
+                                            </h4>
+                                            <p>
+                                                <span class="fw-right gray xs-icon"></span>
+                                                The call action implementation for SQL connector to invoke stored procedures/functions.
+                                            </p>
+                                            
+                                                <p>
+                                                    <label class="table-header-text">Parameters:</label>
+                                                <table>
+                                                    <tr>
+                                                        <th>Parameter Name</th>
+                                                        <th>Data Type</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                    
+                                                        <tr>
+                                                            <td>query</td>
+                                                            <td>string</td>
+                                                            <td>SQL query to execute</td>
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            <td>parameters</td>
+                                                            <td>Parameter[]</td>
+                                                            <td>Parameter array used with the SQL query</td>
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            <td>structType</td>
+                                                            <td>type</td>
+                                                            <td></td>
+                                                        </tr>
+                                                    
+                                                </table>
+                                                </p>
+                                            
+                                            
+                                                <p>
+                                                    <label class="table-header-text">Return Parameters:</label>
+                                                <table>
+                                                    <tr>
+                                                        <th>Return Variable</th>
+                                                        <th>Data Type</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                    
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>datatable</td>
+                                                            <td></td>
+                                                        </tr>
+                                                    
+                                                </table>
+                                                </p>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            <h4 id="close">
+                                                <span class=fw-action></span>
+                                                <span class="thin-text light-gray">< ClientConnector ></span>
+                                                close
+                                                (  )
+                                                
+                                            </h4>
+                                            <p>
+                                                <span class="fw-right gray xs-icon"></span>
+                                                The close action implementation for SQL connector to shutdown the connection pool.
+                                            </p>
+                                            
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            <h4 id="select">
+                                                <span class=fw-action></span>
+                                                <span class="thin-text light-gray">< ClientConnector ></span>
+                                                select
+                                                ( string query , Parameter[] parameters , type structType )
+                                                
+                                                ( datatable )
+                                                
+                                            </h4>
+                                            <p>
+                                                <span class="fw-right gray xs-icon"></span>
+                                                The select action implementation for SQL connector to select data from tables.
+                                            </p>
+                                            
+                                                <p>
+                                                    <label class="table-header-text">Parameters:</label>
+                                                <table>
+                                                    <tr>
+                                                        <th>Parameter Name</th>
+                                                        <th>Data Type</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                    
+                                                        <tr>
+                                                            <td>query</td>
+                                                            <td>string</td>
+                                                            <td>SQL query to execute</td>
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            <td>parameters</td>
+                                                            <td>Parameter[]</td>
+                                                            <td>Parameter array used with the SQL query</td>
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            <td>structType</td>
+                                                            <td>type</td>
+                                                            <td></td>
+                                                        </tr>
+                                                    
+                                                </table>
+                                                </p>
+                                            
+                                            
+                                                <p>
+                                                    <label class="table-header-text">Return Parameters:</label>
+                                                <table>
+                                                    <tr>
+                                                        <th>Return Variable</th>
+                                                        <th>Data Type</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                    
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>datatable</td>
+                                                            <td></td>
+                                                        </tr>
+                                                    
+                                                </table>
+                                                </p>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            <h4 id="update">
+                                                <span class=fw-action></span>
+                                                <span class="thin-text light-gray">< ClientConnector ></span>
+                                                update
+                                                ( string query , Parameter[] parameters )
+                                                
+                                                ( int )
+                                                
+                                            </h4>
+                                            <p>
+                                                <span class="fw-right gray xs-icon"></span>
+                                                The update action implementation for SQL connector to update data and schema of the database.
+                                            </p>
+                                            
+                                                <p>
+                                                    <label class="table-header-text">Parameters:</label>
+                                                <table>
+                                                    <tr>
+                                                        <th>Parameter Name</th>
+                                                        <th>Data Type</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                    
+                                                        <tr>
+                                                            <td>query</td>
+                                                            <td>string</td>
+                                                            <td>SQL query to execute</td>
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            <td>parameters</td>
+                                                            <td>Parameter[]</td>
+                                                            <td>Parameter array used with the SQL query</td>
+                                                        </tr>
+                                                    
+                                                </table>
+                                                </p>
+                                            
+                                            
+                                                <p>
+                                                    <label class="table-header-text">Return Parameters:</label>
+                                                <table>
+                                                    <tr>
+                                                        <th>Return Variable</th>
+                                                        <th>Data Type</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                    
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>int</td>
+                                                            <td></td>
+                                                        </tr>
+                                                    
+                                                </table>
+                                                </p>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            <h4 id="updateWithGeneratedKeys">
+                                                <span class=fw-action></span>
+                                                <span class="thin-text light-gray">< ClientConnector ></span>
+                                                updateWithGeneratedKeys
+                                                ( string query , Parameter[] parameters , string[] keyColumns )
+                                                
+                                                ( int , string[] )
+                                                
+                                            </h4>
+                                            <p>
+                                                <span class="fw-right gray xs-icon"></span>
+                                                The updateWithGeneratedKeys action implementation for SQL connector which returns the auto generated keys during the update action.
+                                            </p>
+                                            
+                                                <p>
+                                                    <label class="table-header-text">Parameters:</label>
+                                                <table>
+                                                    <tr>
+                                                        <th>Parameter Name</th>
+                                                        <th>Data Type</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                    
+                                                        <tr>
+                                                            <td>query</td>
+                                                            <td>string</td>
+                                                            <td>SQL query to execute</td>
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            <td>parameters</td>
+                                                            <td>Parameter[]</td>
+                                                            <td>Parameter array used with the SQL query</td>
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            <td>keyColumns</td>
+                                                            <td>string[]</td>
+                                                            <td>Names of auto generated columns for which the auto generated key values are returned</td>
+                                                        </tr>
+                                                    
+                                                </table>
+                                                </p>
+                                            
+                                            
+                                                <p>
+                                                    <label class="table-header-text">Return Parameters:</label>
+                                                <table>
+                                                    <tr>
+                                                        <th>Return Variable</th>
+                                                        <th>Data Type</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                    
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>int</td>
+                                                            <td></td>
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>string[]</td>
+                                                            <td></td>
+                                                        </tr>
+                                                    
+                                                </table>
+                                                </p>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                        
+                    
+                    <!-- Enums-->
+                    
+                    <!-- Annotations-->
+                    
+                    <!-- Global Variables-->
+                    
+                
+                    <!-- Function -->
+                    
+                    <!-- Struct-binded functions grouped together -->
+                    
+                    <!-- Connectors and its actions -->
+                    
+                    <!-- Enums-->
+                    
+                        <h4 id="DB">
+                            <span class="fw-constant sm-icon"></span>
+                            public enum DB
+                        </h4>
+                        <p><span class="fw-right gray xs-icon">The Databases which has direct parameter support.</p>
+                        
+                            <p>
+                                <label class="table-header-text">Enumerators:</label>
+                            <table>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                </tr>
+                                
+                                    <tr>
+                                        <td>MYSQL</td>
+                                        <td>MySQL DB with connection url in the format of  jdbc:mysql://[HOST]:[PORT]/[database]</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>SQLSERVER</td>
+                                        <td>SQL Server DB with connection url in the format of jdbc:sqlserver://[HOST]:[PORT];databaseName&#x3D;[database]</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>ORACLE</td>
+                                        <td>Oracle DB with connection url in the format of  jdbc:oracle:thin:[username/password]@[HOST]:[PORT]/[database]</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>SYBASE</td>
+                                        <td>Sybase DB with connection url in the format of  jdbc:sybase:Tds:[HOST]:[PORT]/[database]</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>POSTGRES</td>
+                                        <td>PostgreSQL DB with connection url in the format of  jdbc:postgresql://[HOST]:[PORT]/[database]</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>IBMDB2</td>
+                                        <td>IBMDB2 DB with connection url in the format of  jdbc:db2://[HOST]:[PORT]/[database]</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>HSQLDB_SERVER</td>
+                                        <td>HSQL Server with connection url in the format of jdbc:hsqldb:hsql://[HOST]:[PORT]/[database]</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>HSQLDB_FILE</td>
+                                        <td>HSQL Server with connection url in the format of jdbc:hsqldb:file:[path]/[database]</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>H2_SERVER</td>
+                                        <td>H2 Server DB with connection url in the format of jdbc:h2:tcp://[HOST]:[PORT]/[database]</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>H2_FILE</td>
+                                        <td>H2 File DB with connection url in the format of jdbc:h2:file://[path]/[database]</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>DERBY_SERVER</td>
+                                        <td>DERBY server DB with connection url in the format of jdbc:derby://[HOST]:[PORT]/[database]</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>DERBY_FILE</td>
+                                        <td>Derby file DB with connection url in the format of jdbc:derby://[path]/[database]</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>GENERIC</td>
+                                        <td>Custom DB connection with given connection url</td>
+                                    </tr>
+                                
+                            </table>
+                            </p>
+                        
+                    
+                    <!-- Annotations-->
+                    
+                    <!-- Global Variables-->
+                    
+                
+                    <!-- Function -->
+                    
+                    <!-- Struct-binded functions grouped together -->
+                    
+                    <!-- Connectors and its actions -->
+                    
+                    <!-- Enums-->
+                    
+                        <h4 id="Direction">
+                            <span class="fw-constant sm-icon"></span>
+                            public enum Direction
+                        </h4>
+                        <p><span class="fw-right gray xs-icon">The direction of the parameter</p>
+                        
+                            <p>
+                                <label class="table-header-text">Enumerators:</label>
+                            <table>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                </tr>
+                                
+                                    <tr>
+                                        <td>IN</td>
+                                        <td>IN parameters are used to send values to stored procedures</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>OUT</td>
+                                        <td>OUT parameters are used to get values from stored procedures</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>INOUT</td>
+                                        <td>INOUT parameters are used to send values and get values from stored procedures</td>
+                                    </tr>
+                                
+                            </table>
+                            </p>
+                        
+                    
+                    <!-- Annotations-->
+                    
+                    <!-- Global Variables-->
+                    
+                
+                    <!-- Function -->
+                    
+                    <!-- Struct-binded functions grouped together -->
+                    
+                    <!-- Connectors and its actions -->
+                    
+                    <!-- Enums-->
+                    
+                        <h4 id="Type">
+                            <span class="fw-constant sm-icon"></span>
+                            public enum Type
+                        </h4>
+                        <p><span class="fw-right gray xs-icon">The SQL Datatype of the parameter</p>
+                        
+                            <p>
+                                <label class="table-header-text">Enumerators:</label>
+                            <table>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                </tr>
+                                
+                                    <tr>
+                                        <td>VARCHAR</td>
+                                        <td>Small, variable-length character string</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>CHAR</td>
+                                        <td>Small, fixed-length character string</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>LONGVARCHAR</td>
+                                        <td>Large, variable-length character string</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>NCHAR</td>
+                                        <td>Small, fixed-length character string with unicode support</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>LONGNVARCHAR</td>
+                                        <td>Large, variable-length character string with unicode support</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>NVARCHAR</td>
+                                        <td>VARCHAR: Small, variable-length character string</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>BIT</td>
+                                        <td>Single bit value that can be zero or one, or null</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>BOOLEAN</td>
+                                        <td>Boolean value either True or false</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>TINYINT</td>
+                                        <td>8-bit integer value which may be unsigned or signed</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>SMALLINT</td>
+                                        <td>16-bit signed integer value which may be unsigned or signed</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>INTEGER</td>
+                                        <td>32-bit signed integer value which may be unsigned or signed</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>BIGINT</td>
+                                        <td>64-bit signed integer value which may be unsigned or signed</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>NUMERIC</td>
+                                        <td>Fixed-precision and scaled decimal values</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>DECIMAL</td>
+                                        <td>Fixed-precision and scaled decimal values</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>REAL</td>
+                                        <td>Single precision floating point number</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>FLOAT</td>
+                                        <td>Double precision floating point number</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>DOUBLE</td>
+                                        <td>Double precision floating point number</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>BINARY</td>
+                                        <td>Small, fixed-length binary value</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>BLOB</td>
+                                        <td>Binary Large Object</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>LONGVARBINARY</td>
+                                        <td>Large, variable-length binary value</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>VARBINARY</td>
+                                        <td>Small, variable-length binary value</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>CLOB</td>
+                                        <td>Character Large Object</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>NCLOB</td>
+                                        <td>Character large objects in multibyte national character set</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>DATE</td>
+                                        <td>Date consisting of day, month, and year</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>TIME</td>
+                                        <td>Time consisting of hours, minutes, and seconds</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>DATETIME</td>
+                                        <td>Both DATE and TIME with additional a nanosecond field</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>TIMESTAMP</td>
+                                        <td>Both DATE and TIME with additional a nanosecond field</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>ARRAY</td>
+                                        <td>Composite data value that consists of zero or more elements of a specified data type</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>STRUCT</td>
+                                        <td>User defined structured type, consists of one or more attributes</td>
+                                    </tr>
+                                
+                            </table>
+                            </p>
+                        
+                    
+                    <!-- Annotations-->
+                    
+                    <!-- Global Variables-->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
