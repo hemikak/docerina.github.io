@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="docerina-theme/libs/bootstrap-3.0.0/css/bootstrap.min.css">
 
+    <!-- Nanoscroller CSS -->
+    <link rel="stylesheet" href="docerina-theme/css/nanoscroller.css">
+
     <!-- Ballerina font CSS -->
     <link rel="stylesheet" href="docerina-theme/css/font-ballerina/css/font-ballerina.css">
 
@@ -17,18 +20,21 @@
     <!-- custom CSS -->
     <link rel="stylesheet" href="docerina-theme/css/main.css">
 
-    <!--Jquery JS-->
+    <!-- Jquery JS -->
     <script src="docerina-theme/js/jquery.min.js"></script>
 
-    <!--Bootstrap JS-->
+    <!-- Bootstrap JS -->
     <script src="docerina-theme/libs/bootstrap-3.0.0/js/bootstrap.min.js"></script>
 
-    <!--Docerina JS-->
+    <!-- Nanoscroller JS -->
+    <script src="docerina-theme/js/jquery.nanoscroller.min.js"></script>
+
+    <!-- Docerina JS -->
     <script src="docerina-theme/js/docerina.js"></script>
 
     <title>Ballerina API Documentation</title>
 </head>
-<body data-spy="scroll" data-target=".constructs-wrapper">
+<body>
 <!-- Fixed navbar -->
 <div id="header" class="navbar navbar-fixed-top">
     <div class="container-full">
@@ -38,8 +44,8 @@
 <div class="container-full">
     <div class="row docerina-content">
         <div id="packageList" class="col-sm-3 col-lg-2">
-            <nav class="navbar navbar-default navbar-fixed-side">
-                <div class="container">
+            <nav class="navbar navbar-default navbar-fixed-side nano">
+                <div class="container nano-content">
                     <div class="navbar-header">
                         <h3><span class="bold">Ballerina</span> Packages</h3>
                     </div>
@@ -49,8 +55,8 @@
                                 <li>
                                     <!--Package Name-->
                                     
-                                        <a href="Primitive-Types.html"><span
-                                                class="bold">Primitive-Types</span></a>
+                                        <a href="primitive-types.html"><span
+                                                class="bold">Primitive Types</span></a>
                                     
                                 </li>
                             </ul>
@@ -65,7 +71,7 @@
                                 </li>
                             </ul>
                         
-                            <ul class="nav navbar-nav package-name-ul active">
+                            <ul class="nav navbar-nav package-name-ul active-package">
                                 <li>
                                     <!--Package Name-->
                                     
@@ -363,325 +369,328 @@
         </div>
         <!-- Main Content on the right-->
         <div class="col-sm-9 col-lg-10 content-wrapper main-wrapper">
-            <div id="content">
-                <h3 class="thin-text padding-bottom">
-                    <span class="bold">ballerina.caching</span> package
-                </h3>
-                
-                    <div class="construct-wrapper">
-                        <!--Primitive Types-->
-                        
-                        <!-- Function -->
-                        
-                        <!-- Struct-binded functions grouped together -->
-                        
-                            <h4 id="Cache">
-                                <span class="fw-struct sm-icon"></span>
-                                public struct Cache
-                            </h4>
+            <div id="content" class="nano">
+                <div class="nano-content">
+                    <h3 class="thin-text padding-bottom">
+                        <span class="bold">ballerina.caching</span>
+                        package
+                    </h3>
+                    
+                        <div class="construct-wrapper">
+                            <!--Primitive Types-->
                             
-                                <p>
-                                    <span class="fw-right gray xs-icon"></span>Map which stores all of the caches.
-                                </p>
+                            <!-- Function -->
                             
+                            <!-- Struct-binded functions grouped together -->
                             
-                                <p>
-                                    <label class="table-header-text">Fields:</label>
-                                </p>
-                                <table>
-                                    <tr>
-                                        <th class="col-md-4">Field Name</th>
-                                        <th class="col-md-2">Data Type</th>
-                                        <th class="col-md-6">Description</th>
-                                    </tr>
-                                    
-                                        <tr>
-                                            <td class="col-md-4">name</td>
-                                            <td class="col-md-2">string</td>
-                                            <td class="col-md-6">name of the cache</td>
-                                        </tr>
-                                    
-                                        <tr>
-                                            <td class="col-md-4">expiryTimeMillis</td>
-                                            <td class="col-md-2">int</td>
-                                            <td class="col-md-6">cache expiry time in ms</td>
-                                        </tr>
-                                    
-                                        <tr>
-                                            <td class="col-md-4">capacity</td>
-                                            <td class="col-md-2">int</td>
-                                            <td class="col-md-6">capacity of the cache</td>
-                                        </tr>
-                                    
-                                        <tr>
-                                            <td class="col-md-4">evictionFactor</td>
-                                            <td class="col-md-2">float</td>
-                                            <td class="col-md-6">eviction factor to be used for cache eviction</td>
-                                        </tr>
-                                    
-                                        <tr>
-                                            <td class="col-md-4">entries</td>
-                                            <td class="col-md-2">map</td>
-                                            <td class="col-md-6">map which contains the cache entries</td>
-                                        </tr>
-                                    
-                                </table>
-                            
-                            
-                                <div class="function-wrapper">
-                                    <ul>
-                                        
-                                            <li>
-                                                <h4 id="Cache-get">
-                                                    <span class=fw-function></span>
-                                                    <span class="thin-text light-gray">&lt; Cache &gt;</span>
-                                                    get
-                                                    ( string key )
-                                                    
-                                                    ( any )
-                                                    
-                                                </h4>
-                                                
-                                                    <p>
-                                                        <span class="fw-right gray xs-icon"></span>Returns the cached value associated with the given key. Returns null if the provided key does not exist in the cache.
-                                                    </p>
-                                                
-                                                
-                                                    <p>
-                                                        <label class="table-header-text">Parameters:</label>
-                                                    </p>
-                                                    <table>
-                                                        <tr>
-                                                            <th class="col-md-4">Parameter Name</th>
-                                                            <th class="col-md-2">Data Type</th>
-                                                            <th class="col-md-6">Description</th>
-                                                        </tr>
-                                                        
-                                                            <tr>
-                                                                <td class="col-md-4">key</td>
-                                                                <td class="col-md-2">string</td>
-                                                                <td class="col-md-6">key which is used to retrieve the cached value</td>
-                                                            </tr>
-                                                        
-                                                    </table>
-                                                
-                                                
-                                                    <p>
-                                                        <label class="table-header-text">Return Parameters:</label>
-                                                    </p>
-                                                    <table>
-                                                        <tr>
-                                                            <th class="col-md-4">Return Variable</th>
-                                                            <th class="col-md-2">Data Type</th>
-                                                            <th class="col-md-6">Description</th>
-                                                        </tr>
-                                                        
-                                                            <tr>
-                                                                <td class="col-md-4"></td>
-                                                                <td class="col-md-2">any</td>
-                                                                <td class="col-md-6"></td>
-                                                            </tr>
-                                                        
-                                                    </table>
-                                                
-                                            </li>
-                                        
-                                            <li>
-                                                <h4 id="Cache-put">
-                                                    <span class=fw-function></span>
-                                                    <span class="thin-text light-gray">&lt; Cache &gt;</span>
-                                                    put
-                                                    ( string key , any value )
-                                                    
-                                                </h4>
-                                                
-                                                    <p>
-                                                        <span class="fw-right gray xs-icon"></span>Adds the given key, value pair to the provided cache.
-                                                    </p>
-                                                
-                                                
-                                                    <p>
-                                                        <label class="table-header-text">Parameters:</label>
-                                                    </p>
-                                                    <table>
-                                                        <tr>
-                                                            <th class="col-md-4">Parameter Name</th>
-                                                            <th class="col-md-2">Data Type</th>
-                                                            <th class="col-md-6">Description</th>
-                                                        </tr>
-                                                        
-                                                            <tr>
-                                                                <td class="col-md-4">key</td>
-                                                                <td class="col-md-2">string</td>
-                                                                <td class="col-md-6">value which should be used as the key</td>
-                                                            </tr>
-                                                        
-                                                            <tr>
-                                                                <td class="col-md-4">value</td>
-                                                                <td class="col-md-2">any</td>
-                                                                <td class="col-md-6">value to be cached</td>
-                                                            </tr>
-                                                        
-                                                    </table>
-                                                
-                                                
-                                            </li>
-                                        
-                                            <li>
-                                                <h4 id="Cache-remove">
-                                                    <span class=fw-function></span>
-                                                    <span class="thin-text light-gray">&lt; Cache &gt;</span>
-                                                    remove
-                                                    ( string key )
-                                                    
-                                                </h4>
-                                                
-                                                    <p>
-                                                        <span class="fw-right gray xs-icon"></span>Removes a cached value from a cache.
-                                                    </p>
-                                                
-                                                
-                                                    <p>
-                                                        <label class="table-header-text">Parameters:</label>
-                                                    </p>
-                                                    <table>
-                                                        <tr>
-                                                            <th class="col-md-4">Parameter Name</th>
-                                                            <th class="col-md-2">Data Type</th>
-                                                            <th class="col-md-6">Description</th>
-                                                        </tr>
-                                                        
-                                                            <tr>
-                                                                <td class="col-md-4">key</td>
-                                                                <td class="col-md-2">string</td>
-                                                                <td class="col-md-6">key of the cache entry which needs to be removed</td>
-                                                            </tr>
-                                                        
-                                                    </table>
-                                                
-                                                
-                                            </li>
-                                        
-                                            <li>
-                                                <h4 id="Cache-size">
-                                                    <span class=fw-function></span>
-                                                    <span class="thin-text light-gray">&lt; Cache &gt;</span>
-                                                    size
-                                                    (  )
-                                                    
-                                                    ( int )
-                                                    
-                                                </h4>
-                                                
-                                                    <p>
-                                                        <span class="fw-right gray xs-icon"></span>Returns the size of the cache.
-                                                    </p>
-                                                
-                                                
-                                                
-                                                    <p>
-                                                        <label class="table-header-text">Return Parameters:</label>
-                                                    </p>
-                                                    <table>
-                                                        <tr>
-                                                            <th class="col-md-4">Return Variable</th>
-                                                            <th class="col-md-2">Data Type</th>
-                                                            <th class="col-md-6">Description</th>
-                                                        </tr>
-                                                        
-                                                            <tr>
-                                                                <td class="col-md-4"></td>
-                                                                <td class="col-md-2">int</td>
-                                                                <td class="col-md-6"></td>
-                                                            </tr>
-                                                        
-                                                    </table>
-                                                
-                                            </li>
-                                        
-                                    </ul>
-                                </div>
-                            
-                        
-                        <!-- Connectors and its actions -->
-                        
-                        <!-- Enums-->
-                        
-                        <!-- Annotations-->
-                        
-                        <!-- Global Variables-->
-                        
-                    </div>
-                
-                    <div class="construct-wrapper">
-                        <!--Primitive Types-->
-                        
-                        <!-- Function -->
-                        
-                            <h4 id="createCache">
-                                <span class="fw-function sm-icon"> </span>
-                                public function createCache
-                                ( string name , int expiryTimeMillis , int capacity , float evictionFactor )
+                                <h4 id="Cache">
+                                    <span class="fw-struct sm-icon"></span>
+                                    public struct Cache
+                                </h4>
                                 
-                                ( Cache )
+                                    <p>
+                                        <span class="fw-right gray xs-icon"></span>Map which stores all of the caches.
+                                    </p>
                                 
-                            </h4>
-                            
-                                <p>
-                                    <span class="fw-right gray xs-icon"></span>Creates a new cache.
-                                </p>
-                            
-                            
-                                <p>
-                                    <label class="table-header-text">Parameters:</label>
-                                </p>
-                                <table>
-                                    <tr>
-                                        <th class="col-md-4">Parameter Name</th>
-                                        <th class="col-md-2">Data Type</th>
-                                        <th class="col-md-6">Description</th>
-                                    </tr>
-                                    
+                                
+                                    <p>
+                                        <label class="table-header-text">Fields:</label>
+                                    </p>
+                                    <table>
                                         <tr>
-                                            <td class="col-md-4">name</td>
-                                            <td class="col-md-2">string</td>
-                                            <td class="col-md-6">name of the cache</td>
+                                            <th class="col-md-4">Field Name</th>
+                                            <th class="col-md-2">Data Type</th>
+                                            <th class="col-md-6">Description</th>
                                         </tr>
-                                    
-                                        <tr>
-                                            <td class="col-md-4">expiryTimeMillis</td>
-                                            <td class="col-md-2">int</td>
-                                            <td class="col-md-6">expiryTime of the cache in ms</td>
-                                        </tr>
-                                    
-                                        <tr>
-                                            <td class="col-md-4">capacity</td>
-                                            <td class="col-md-2">int</td>
-                                            <td class="col-md-6">capacitry of the cache which should be greater than 0</td>
-                                        </tr>
-                                    
-                                        <tr>
-                                            <td class="col-md-4">evictionFactor</td>
-                                            <td class="col-md-2">float</td>
-                                            <td class="col-md-6">eviction factor to be used for cache eviction</td>
-                                        </tr>
-                                    
-                                </table>
+                                        
+                                            <tr>
+                                                <td class="col-md-4">name</td>
+                                                <td class="col-md-2">string</td>
+                                                <td class="col-md-6">name of the cache</td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td class="col-md-4">expiryTimeMillis</td>
+                                                <td class="col-md-2">int</td>
+                                                <td class="col-md-6">cache expiry time in ms</td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td class="col-md-4">capacity</td>
+                                                <td class="col-md-2">int</td>
+                                                <td class="col-md-6">capacity of the cache</td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td class="col-md-4">evictionFactor</td>
+                                                <td class="col-md-2">float</td>
+                                                <td class="col-md-6">eviction factor to be used for cache eviction</td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td class="col-md-4">entries</td>
+                                                <td class="col-md-2">map</td>
+                                                <td class="col-md-6">map which contains the cache entries</td>
+                                            </tr>
+                                        
+                                    </table>
+                                
+                                
+                                    <div class="function-wrapper">
+                                        <ul>
+                                            
+                                                <li>
+                                                    <h4 id="Cache-get">
+                                                        <span class=fw-function></span>
+                                                        <span class="thin-text light-gray">&lt; Cache &gt;</span>
+                                                        get
+                                                        ( string key )
+                                                        
+                                                        ( any )
+                                                        
+                                                    </h4>
+                                                    
+                                                        <p>
+                                                            <span class="fw-right gray xs-icon"></span>Returns the cached value associated with the given key. Returns null if the provided key does not exist in the cache.
+                                                        </p>
+                                                    
+                                                    
+                                                        <p>
+                                                            <label class="table-header-text">Parameters:</label>
+                                                        </p>
+                                                        <table>
+                                                            <tr>
+                                                                <th class="col-md-4">Parameter Name</th>
+                                                                <th class="col-md-2">Data Type</th>
+                                                                <th class="col-md-6">Description</th>
+                                                            </tr>
+                                                            
+                                                                <tr>
+                                                                    <td class="col-md-4">key</td>
+                                                                    <td class="col-md-2">string</td>
+                                                                    <td class="col-md-6">key which is used to retrieve the cached value</td>
+                                                                </tr>
+                                                            
+                                                        </table>
+                                                    
+                                                    
+                                                        <p>
+                                                            <label class="table-header-text">Return Parameters:</label>
+                                                        </p>
+                                                        <table>
+                                                            <tr>
+                                                                <th class="col-md-4">Return Variable</th>
+                                                                <th class="col-md-2">Data Type</th>
+                                                                <th class="col-md-6">Description</th>
+                                                            </tr>
+                                                            
+                                                                <tr>
+                                                                    <td class="col-md-4"></td>
+                                                                    <td class="col-md-2">any</td>
+                                                                    <td class="col-md-6"></td>
+                                                                </tr>
+                                                            
+                                                        </table>
+                                                    
+                                                </li>
+                                            
+                                                <li>
+                                                    <h4 id="Cache-put">
+                                                        <span class=fw-function></span>
+                                                        <span class="thin-text light-gray">&lt; Cache &gt;</span>
+                                                        put
+                                                        ( string key , any value )
+                                                        
+                                                    </h4>
+                                                    
+                                                        <p>
+                                                            <span class="fw-right gray xs-icon"></span>Adds the given key, value pair to the provided cache.
+                                                        </p>
+                                                    
+                                                    
+                                                        <p>
+                                                            <label class="table-header-text">Parameters:</label>
+                                                        </p>
+                                                        <table>
+                                                            <tr>
+                                                                <th class="col-md-4">Parameter Name</th>
+                                                                <th class="col-md-2">Data Type</th>
+                                                                <th class="col-md-6">Description</th>
+                                                            </tr>
+                                                            
+                                                                <tr>
+                                                                    <td class="col-md-4">key</td>
+                                                                    <td class="col-md-2">string</td>
+                                                                    <td class="col-md-6">value which should be used as the key</td>
+                                                                </tr>
+                                                            
+                                                                <tr>
+                                                                    <td class="col-md-4">value</td>
+                                                                    <td class="col-md-2">any</td>
+                                                                    <td class="col-md-6">value to be cached</td>
+                                                                </tr>
+                                                            
+                                                        </table>
+                                                    
+                                                    
+                                                </li>
+                                            
+                                                <li>
+                                                    <h4 id="Cache-remove">
+                                                        <span class=fw-function></span>
+                                                        <span class="thin-text light-gray">&lt; Cache &gt;</span>
+                                                        remove
+                                                        ( string key )
+                                                        
+                                                    </h4>
+                                                    
+                                                        <p>
+                                                            <span class="fw-right gray xs-icon"></span>Removes a cached value from a cache.
+                                                        </p>
+                                                    
+                                                    
+                                                        <p>
+                                                            <label class="table-header-text">Parameters:</label>
+                                                        </p>
+                                                        <table>
+                                                            <tr>
+                                                                <th class="col-md-4">Parameter Name</th>
+                                                                <th class="col-md-2">Data Type</th>
+                                                                <th class="col-md-6">Description</th>
+                                                            </tr>
+                                                            
+                                                                <tr>
+                                                                    <td class="col-md-4">key</td>
+                                                                    <td class="col-md-2">string</td>
+                                                                    <td class="col-md-6">key of the cache entry which needs to be removed</td>
+                                                                </tr>
+                                                            
+                                                        </table>
+                                                    
+                                                    
+                                                </li>
+                                            
+                                                <li>
+                                                    <h4 id="Cache-size">
+                                                        <span class=fw-function></span>
+                                                        <span class="thin-text light-gray">&lt; Cache &gt;</span>
+                                                        size
+                                                        (  )
+                                                        
+                                                        ( int )
+                                                        
+                                                    </h4>
+                                                    
+                                                        <p>
+                                                            <span class="fw-right gray xs-icon"></span>Returns the size of the cache.
+                                                        </p>
+                                                    
+                                                    
+                                                    
+                                                        <p>
+                                                            <label class="table-header-text">Return Parameters:</label>
+                                                        </p>
+                                                        <table>
+                                                            <tr>
+                                                                <th class="col-md-4">Return Variable</th>
+                                                                <th class="col-md-2">Data Type</th>
+                                                                <th class="col-md-6">Description</th>
+                                                            </tr>
+                                                            
+                                                                <tr>
+                                                                    <td class="col-md-4"></td>
+                                                                    <td class="col-md-2">int</td>
+                                                                    <td class="col-md-6"></td>
+                                                                </tr>
+                                                            
+                                                        </table>
+                                                    
+                                                </li>
+                                            
+                                        </ul>
+                                    </div>
+                                
                             
+                            <!-- Connectors and its actions -->
                             
-                        
-                        <!-- Struct-binded functions grouped together -->
-                        
-                        <!-- Connectors and its actions -->
-                        
-                        <!-- Enums-->
-                        
-                        <!-- Annotations-->
-                        
-                        <!-- Global Variables-->
-                        
-                    </div>
-                
+                            <!-- Enums-->
+                            
+                            <!-- Annotations-->
+                            
+                            <!-- Global Variables-->
+                            
+                        </div>
+                    
+                        <div class="construct-wrapper">
+                            <!--Primitive Types-->
+                            
+                            <!-- Function -->
+                            
+                                <h4 id="createCache">
+                                    <span class="fw-function sm-icon"> </span>
+                                    public function createCache
+                                    ( string name , int expiryTimeMillis , int capacity , float evictionFactor )
+                                    
+                                    ( Cache )
+                                    
+                                </h4>
+                                
+                                    <p>
+                                        <span class="fw-right gray xs-icon"></span>Creates a new cache.
+                                    </p>
+                                
+                                
+                                    <p>
+                                        <label class="table-header-text">Parameters:</label>
+                                    </p>
+                                    <table>
+                                        <tr>
+                                            <th class="col-md-4">Parameter Name</th>
+                                            <th class="col-md-2">Data Type</th>
+                                            <th class="col-md-6">Description</th>
+                                        </tr>
+                                        
+                                            <tr>
+                                                <td class="col-md-4">name</td>
+                                                <td class="col-md-2">string</td>
+                                                <td class="col-md-6">name of the cache</td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td class="col-md-4">expiryTimeMillis</td>
+                                                <td class="col-md-2">int</td>
+                                                <td class="col-md-6">expiryTime of the cache in ms</td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td class="col-md-4">capacity</td>
+                                                <td class="col-md-2">int</td>
+                                                <td class="col-md-6">capacitry of the cache which should be greater than 0</td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td class="col-md-4">evictionFactor</td>
+                                                <td class="col-md-2">float</td>
+                                                <td class="col-md-6">eviction factor to be used for cache eviction</td>
+                                            </tr>
+                                        
+                                    </table>
+                                
+                                
+                            
+                            <!-- Struct-binded functions grouped together -->
+                            
+                            <!-- Connectors and its actions -->
+                            
+                            <!-- Enums-->
+                            
+                            <!-- Annotations-->
+                            
+                            <!-- Global Variables-->
+                            
+                        </div>
+                    
+                </div>
             </div>
         </div>
     </div>

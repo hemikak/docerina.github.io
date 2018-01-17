@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="docerina-theme/libs/bootstrap-3.0.0/css/bootstrap.min.css">
 
+    <!-- Nanoscroller CSS -->
+    <link rel="stylesheet" href="docerina-theme/css/nanoscroller.css">
+
     <!-- Ballerina font CSS -->
     <link rel="stylesheet" href="docerina-theme/css/font-ballerina/css/font-ballerina.css">
 
@@ -17,18 +20,21 @@
     <!-- custom CSS -->
     <link rel="stylesheet" href="docerina-theme/css/main.css">
 
-    <!--Jquery JS-->
+    <!-- Jquery JS -->
     <script src="docerina-theme/js/jquery.min.js"></script>
 
-    <!--Bootstrap JS-->
+    <!-- Bootstrap JS -->
     <script src="docerina-theme/libs/bootstrap-3.0.0/js/bootstrap.min.js"></script>
 
-    <!--Docerina JS-->
+    <!-- Nanoscroller JS -->
+    <script src="docerina-theme/js/jquery.nanoscroller.min.js"></script>
+
+    <!-- Docerina JS -->
     <script src="docerina-theme/js/docerina.js"></script>
 
     <title>Ballerina API Documentation</title>
 </head>
-<body data-spy="scroll" data-target=".constructs-wrapper">
+<body>
 <!-- Fixed navbar -->
 <div id="header" class="navbar navbar-fixed-top">
     <div class="container-full">
@@ -38,8 +44,8 @@
 <div class="container-full">
     <div class="row docerina-content">
         <div id="packageList" class="col-sm-3 col-lg-2">
-            <nav class="navbar navbar-default navbar-fixed-side">
-                <div class="container">
+            <nav class="navbar navbar-default navbar-fixed-side nano">
+                <div class="container nano-content">
                     <div class="navbar-header">
                         <h3><span class="bold">Ballerina</span> Packages</h3>
                     </div>
@@ -49,8 +55,8 @@
                                 <li>
                                     <!--Package Name-->
                                     
-                                        <a href="Primitive-Types.html"><span
-                                                class="bold">Primitive-Types</span></a>
+                                        <a href="primitive-types.html"><span
+                                                class="bold">Primitive Types</span></a>
                                     
                                 </li>
                             </ul>
@@ -155,7 +161,7 @@
                                 </li>
                             </ul>
                         
-                            <ul class="nav navbar-nav package-name-ul active">
+                            <ul class="nav navbar-nav package-name-ul active-package">
                                 <li>
                                     <!--Package Name-->
                                     
@@ -285,62 +291,65 @@
         </div>
         <!-- Main Content on the right-->
         <div class="col-sm-9 col-lg-10 content-wrapper main-wrapper">
-            <div id="content">
-                <h3 class="thin-text padding-bottom">
-                    <span class="bold">ballerina.net.uri</span> package
-                </h3>
-                
-                    <div class="construct-wrapper">
-                        <!--Primitive Types-->
-                        
-                        <!-- Function -->
-                        
-                            <h4 id="encode">
-                                <span class="fw-function sm-icon"> </span>
-                                public function encode
-                                ( string url )
-                                
-                                ( string )
-                                
-                            </h4>
+            <div id="content" class="nano">
+                <div class="nano-content">
+                    <h3 class="thin-text padding-bottom">
+                        <span class="bold">ballerina.net.uri</span>
+                        package
+                    </h3>
+                    
+                        <div class="construct-wrapper">
+                            <!--Primitive Types-->
                             
-                                <p>
-                                    <span class="fw-right gray xs-icon"></span>Encodes the given URL
-                                </p>
+                            <!-- Function -->
                             
-                            
-                                <p>
-                                    <label class="table-header-text">Parameters:</label>
-                                </p>
-                                <table>
-                                    <tr>
-                                        <th class="col-md-4">Parameter Name</th>
-                                        <th class="col-md-2">Data Type</th>
-                                        <th class="col-md-6">Description</th>
-                                    </tr>
+                                <h4 id="encode">
+                                    <span class="fw-function sm-icon"> </span>
+                                    public function encode
+                                    ( string url )
                                     
+                                    ( string )
+                                    
+                                </h4>
+                                
+                                    <p>
+                                        <span class="fw-right gray xs-icon"></span>Encodes the given URL
+                                    </p>
+                                
+                                
+                                    <p>
+                                        <label class="table-header-text">Parameters:</label>
+                                    </p>
+                                    <table>
                                         <tr>
-                                            <td class="col-md-4">url</td>
-                                            <td class="col-md-2">string</td>
-                                            <td class="col-md-6">URL to be encoded</td>
+                                            <th class="col-md-4">Parameter Name</th>
+                                            <th class="col-md-2">Data Type</th>
+                                            <th class="col-md-6">Description</th>
                                         </tr>
-                                    
-                                </table>
+                                        
+                                            <tr>
+                                                <td class="col-md-4">url</td>
+                                                <td class="col-md-2">string</td>
+                                                <td class="col-md-6">URL to be encoded</td>
+                                            </tr>
+                                        
+                                    </table>
+                                
+                                
                             
+                            <!-- Struct-binded functions grouped together -->
                             
-                        
-                        <!-- Struct-binded functions grouped together -->
-                        
-                        <!-- Connectors and its actions -->
-                        
-                        <!-- Enums-->
-                        
-                        <!-- Annotations-->
-                        
-                        <!-- Global Variables-->
-                        
-                    </div>
-                
+                            <!-- Connectors and its actions -->
+                            
+                            <!-- Enums-->
+                            
+                            <!-- Annotations-->
+                            
+                            <!-- Global Variables-->
+                            
+                        </div>
+                    
+                </div>
             </div>
         </div>
     </div>

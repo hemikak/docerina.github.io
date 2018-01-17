@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="docerina-theme/libs/bootstrap-3.0.0/css/bootstrap.min.css">
 
+    <!-- Nanoscroller CSS -->
+    <link rel="stylesheet" href="docerina-theme/css/nanoscroller.css">
+
     <!-- Ballerina font CSS -->
     <link rel="stylesheet" href="docerina-theme/css/font-ballerina/css/font-ballerina.css">
 
@@ -17,18 +20,21 @@
     <!-- custom CSS -->
     <link rel="stylesheet" href="docerina-theme/css/main.css">
 
-    <!--Jquery JS-->
+    <!-- Jquery JS -->
     <script src="docerina-theme/js/jquery.min.js"></script>
 
-    <!--Bootstrap JS-->
+    <!-- Bootstrap JS -->
     <script src="docerina-theme/libs/bootstrap-3.0.0/js/bootstrap.min.js"></script>
 
-    <!--Docerina JS-->
+    <!-- Nanoscroller JS -->
+    <script src="docerina-theme/js/jquery.nanoscroller.min.js"></script>
+
+    <!-- Docerina JS -->
     <script src="docerina-theme/js/docerina.js"></script>
 
     <title>Ballerina API Documentation</title>
 </head>
-<body data-spy="scroll" data-target=".constructs-wrapper">
+<body>
 <!-- Fixed navbar -->
 <div id="header" class="navbar navbar-fixed-top">
     <div class="container-full">
@@ -38,8 +44,8 @@
 <div class="container-full">
     <div class="row docerina-content">
         <div id="packageList" class="col-sm-3 col-lg-2">
-            <nav class="navbar navbar-default navbar-fixed-side">
-                <div class="container">
+            <nav class="navbar navbar-default navbar-fixed-side nano">
+                <div class="container nano-content">
                     <div class="navbar-header">
                         <h3><span class="bold">Ballerina</span> Packages</h3>
                     </div>
@@ -49,8 +55,8 @@
                                 <li>
                                     <!--Package Name-->
                                     
-                                        <a href="Primitive-Types.html"><span
-                                                class="bold">Primitive-Types</span></a>
+                                        <a href="primitive-types.html"><span
+                                                class="bold">Primitive Types</span></a>
                                     
                                 </li>
                             </ul>
@@ -195,7 +201,7 @@
                                 </li>
                             </ul>
                         
-                            <ul class="nav navbar-nav package-name-ul active">
+                            <ul class="nav navbar-nav package-name-ul active-package">
                                 <li>
                                     <!--Package Name-->
                                     
@@ -318,185 +324,188 @@
         </div>
         <!-- Main Content on the right-->
         <div class="col-sm-9 col-lg-10 content-wrapper main-wrapper">
-            <div id="content">
-                <h3 class="thin-text padding-bottom">
-                    <span class="bold">ballerina.security.crypto</span> package
-                </h3>
-                
-                    <div class="construct-wrapper">
-                        <!--Primitive Types-->
-                        
-                        <!-- Function -->
-                        
-                            <h4 id="getHash">
-                                <span class="fw-function sm-icon"> </span>
-                                public function getHash
-                                ( string baseString , Algorithm algorithm )
+            <div id="content" class="nano">
+                <div class="nano-content">
+                    <h3 class="thin-text padding-bottom">
+                        <span class="bold">ballerina.security.crypto</span>
+                        package
+                    </h3>
+                    
+                        <div class="construct-wrapper">
+                            <!--Primitive Types-->
+                            
+                            <!-- Function -->
+                            
+                                <h4 id="getHash">
+                                    <span class="fw-function sm-icon"> </span>
+                                    public function getHash
+                                    ( string baseString , Algorithm algorithm )
+                                    
+                                    ( string )
+                                    
+                                </h4>
                                 
-                                ( string )
+                                    <p>
+                                        <span class="fw-right gray xs-icon"></span>Returns the hash of the given string using the specified algorithm.
+                                    </p>
                                 
-                            </h4>
-                            
-                                <p>
-                                    <span class="fw-right gray xs-icon"></span>Returns the hash of the given string using the specified algorithm.
-                                </p>
-                            
-                            
-                                <p>
-                                    <label class="table-header-text">Parameters:</label>
-                                </p>
-                                <table>
-                                    <tr>
-                                        <th class="col-md-4">Parameter Name</th>
-                                        <th class="col-md-2">Data Type</th>
-                                        <th class="col-md-6">Description</th>
-                                    </tr>
-                                    
-                                        <tr>
-                                            <td class="col-md-4">baseString</td>
-                                            <td class="col-md-2">string</td>
-                                            <td class="col-md-6">The string to be hashed</td>
-                                        </tr>
-                                    
-                                        <tr>
-                                            <td class="col-md-4">algorithm</td>
-                                            <td class="col-md-2">Algorithm</td>
-                                            <td class="col-md-6">The hashing algorithm to be used</td>
-                                        </tr>
-                                    
-                                </table>
-                            
-                            
-                        
-                        <!-- Struct-binded functions grouped together -->
-                        
-                        <!-- Connectors and its actions -->
-                        
-                        <!-- Enums-->
-                        
-                        <!-- Annotations-->
-                        
-                        <!-- Global Variables-->
-                        
-                    </div>
-                
-                    <div class="construct-wrapper">
-                        <!--Primitive Types-->
-                        
-                        <!-- Function -->
-                        
-                            <h4 id="getHmac">
-                                <span class="fw-function sm-icon"> </span>
-                                public function getHmac
-                                ( string baseString , string keyString , Algorithm algorithm )
                                 
-                                ( string )
+                                    <p>
+                                        <label class="table-header-text">Parameters:</label>
+                                    </p>
+                                    <table>
+                                        <tr>
+                                            <th class="col-md-4">Parameter Name</th>
+                                            <th class="col-md-2">Data Type</th>
+                                            <th class="col-md-6">Description</th>
+                                        </tr>
+                                        
+                                            <tr>
+                                                <td class="col-md-4">baseString</td>
+                                                <td class="col-md-2">string</td>
+                                                <td class="col-md-6">The string to be hashed</td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td class="col-md-4">algorithm</td>
+                                                <td class="col-md-2">Algorithm</td>
+                                                <td class="col-md-6">The hashing algorithm to be used</td>
+                                            </tr>
+                                        
+                                    </table>
                                 
-                            </h4>
+                                
                             
-                                <p>
-                                    <span class="fw-right gray xs-icon"></span>Returns the HMAC value of the provided base string.
-                                </p>
+                            <!-- Struct-binded functions grouped together -->
                             
+                            <!-- Connectors and its actions -->
                             
-                                <p>
-                                    <label class="table-header-text">Parameters:</label>
-                                </p>
-                                <table>
-                                    <tr>
-                                        <th class="col-md-4">Parameter Name</th>
-                                        <th class="col-md-2">Data Type</th>
-                                        <th class="col-md-6">Description</th>
-                                    </tr>
+                            <!-- Enums-->
+                            
+                            <!-- Annotations-->
+                            
+                            <!-- Global Variables-->
+                            
+                        </div>
+                    
+                        <div class="construct-wrapper">
+                            <!--Primitive Types-->
+                            
+                            <!-- Function -->
+                            
+                                <h4 id="getHmac">
+                                    <span class="fw-function sm-icon"> </span>
+                                    public function getHmac
+                                    ( string baseString , string keyString , Algorithm algorithm )
                                     
+                                    ( string )
+                                    
+                                </h4>
+                                
+                                    <p>
+                                        <span class="fw-right gray xs-icon"></span>Returns the HMAC value of the provided base string.
+                                    </p>
+                                
+                                
+                                    <p>
+                                        <label class="table-header-text">Parameters:</label>
+                                    </p>
+                                    <table>
                                         <tr>
-                                            <td class="col-md-4">baseString</td>
-                                            <td class="col-md-2">string</td>
-                                            <td class="col-md-6">The string to be hashed</td>
+                                            <th class="col-md-4">Parameter Name</th>
+                                            <th class="col-md-2">Data Type</th>
+                                            <th class="col-md-6">Description</th>
                                         </tr>
-                                    
+                                        
+                                            <tr>
+                                                <td class="col-md-4">baseString</td>
+                                                <td class="col-md-2">string</td>
+                                                <td class="col-md-6">The string to be hashed</td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td class="col-md-4">keyString</td>
+                                                <td class="col-md-2">string</td>
+                                                <td class="col-md-6">The key string</td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td class="col-md-4">algorithm</td>
+                                                <td class="col-md-2">Algorithm</td>
+                                                <td class="col-md-6">The hashing algorithm to be used</td>
+                                            </tr>
+                                        
+                                    </table>
+                                
+                                
+                            
+                            <!-- Struct-binded functions grouped together -->
+                            
+                            <!-- Connectors and its actions -->
+                            
+                            <!-- Enums-->
+                            
+                            <!-- Annotations-->
+                            
+                            <!-- Global Variables-->
+                            
+                        </div>
+                    
+                        <div class="construct-wrapper">
+                            <!--Primitive Types-->
+                            
+                            <!-- Function -->
+                            
+                            <!-- Struct-binded functions grouped together -->
+                            
+                            <!-- Connectors and its actions -->
+                            
+                            <!-- Enums-->
+                            
+                                <h4 id="Algorithm">
+                                    <span class="fw-constant sm-icon"></span>
+                                    public enum Algorithm
+                                </h4>
+                                
+                                    <p>
+                                        <span class="fw-right gray xs-icon"></span>The algorithms which can be used in crypto functions.
+                                    </p>
+                                
+                                
+                                    <p>
+                                        <label class="table-header-text">Enumerators:</label>
+                                    </p>
+                                    <table>
                                         <tr>
-                                            <td class="col-md-4">keyString</td>
-                                            <td class="col-md-2">string</td>
-                                            <td class="col-md-6">The key string</td>
+                                            <th class="col-md-4">Name</th>
+                                            <th class="col-md-8">Description</th>
                                         </tr>
-                                    
-                                        <tr>
-                                            <td class="col-md-4">algorithm</td>
-                                            <td class="col-md-2">Algorithm</td>
-                                            <td class="col-md-6">The hashing algorithm to be used</td>
-                                        </tr>
-                                    
-                                </table>
+                                        
+                                            <tr>
+                                                <td class="col-md-4">SHA1</td>
+                                                <td class="col-md-8">SHA1 algorithm</td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td class="col-md-4">SHA256</td>
+                                                <td class="col-md-8">SHA256 algorithm</td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td class="col-md-4">MD5</td>
+                                                <td class="col-md-8">MD5 algorithm</td>
+                                            </tr>
+                                        
+                                    </table>
+                                
                             
+                            <!-- Annotations-->
                             
-                        
-                        <!-- Struct-binded functions grouped together -->
-                        
-                        <!-- Connectors and its actions -->
-                        
-                        <!-- Enums-->
-                        
-                        <!-- Annotations-->
-                        
-                        <!-- Global Variables-->
-                        
-                    </div>
-                
-                    <div class="construct-wrapper">
-                        <!--Primitive Types-->
-                        
-                        <!-- Function -->
-                        
-                        <!-- Struct-binded functions grouped together -->
-                        
-                        <!-- Connectors and its actions -->
-                        
-                        <!-- Enums-->
-                        
-                            <h4 id="Algorithm">
-                                <span class="fw-constant sm-icon"></span>
-                                public enum Algorithm
-                            </h4>
+                            <!-- Global Variables-->
                             
-                                <p>
-                                    <span class="fw-right gray xs-icon"></span>The algorithms which can be used in crypto functions.
-                                </p>
-                            
-                            
-                                <p>
-                                    <label class="table-header-text">Enumerators:</label>
-                                </p>
-                                <table>
-                                    <tr>
-                                        <th class="col-md-4">Name</th>
-                                        <th class="col-md-8">Description</th>
-                                    </tr>
-                                    
-                                        <tr>
-                                            <td class="col-md-4">SHA1</td>
-                                            <td class="col-md-8">SHA1 algorithm</td>
-                                        </tr>
-                                    
-                                        <tr>
-                                            <td class="col-md-4">SHA256</td>
-                                            <td class="col-md-8">SHA256 algorithm</td>
-                                        </tr>
-                                    
-                                        <tr>
-                                            <td class="col-md-4">MD5</td>
-                                            <td class="col-md-8">MD5 algorithm</td>
-                                        </tr>
-                                    
-                                </table>
-                            
-                        
-                        <!-- Annotations-->
-                        
-                        <!-- Global Variables-->
-                        
-                    </div>
-                
+                        </div>
+                    
+                </div>
             </div>
         </div>
     </div>

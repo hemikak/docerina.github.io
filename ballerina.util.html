@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="docerina-theme/libs/bootstrap-3.0.0/css/bootstrap.min.css">
 
+    <!-- Nanoscroller CSS -->
+    <link rel="stylesheet" href="docerina-theme/css/nanoscroller.css">
+
     <!-- Ballerina font CSS -->
     <link rel="stylesheet" href="docerina-theme/css/font-ballerina/css/font-ballerina.css">
 
@@ -17,18 +20,21 @@
     <!-- custom CSS -->
     <link rel="stylesheet" href="docerina-theme/css/main.css">
 
-    <!--Jquery JS-->
+    <!-- Jquery JS -->
     <script src="docerina-theme/js/jquery.min.js"></script>
 
-    <!--Bootstrap JS-->
+    <!-- Bootstrap JS -->
     <script src="docerina-theme/libs/bootstrap-3.0.0/js/bootstrap.min.js"></script>
 
-    <!--Docerina JS-->
+    <!-- Nanoscroller JS -->
+    <script src="docerina-theme/js/jquery.nanoscroller.min.js"></script>
+
+    <!-- Docerina JS -->
     <script src="docerina-theme/js/docerina.js"></script>
 
     <title>Ballerina API Documentation</title>
 </head>
-<body data-spy="scroll" data-target=".constructs-wrapper">
+<body>
 <!-- Fixed navbar -->
 <div id="header" class="navbar navbar-fixed-top">
     <div class="container-full">
@@ -38,8 +44,8 @@
 <div class="container-full">
     <div class="row docerina-content">
         <div id="packageList" class="col-sm-3 col-lg-2">
-            <nav class="navbar navbar-default navbar-fixed-side">
-                <div class="container">
+            <nav class="navbar navbar-default navbar-fixed-side nano">
+                <div class="container nano-content">
                     <div class="navbar-header">
                         <h3><span class="bold">Ballerina</span> Packages</h3>
                     </div>
@@ -49,8 +55,8 @@
                                 <li>
                                     <!--Package Name-->
                                     
-                                        <a href="Primitive-Types.html"><span
-                                                class="bold">Primitive-Types</span></a>
+                                        <a href="primitive-types.html"><span
+                                                class="bold">Primitive Types</span></a>
                                     
                                 </li>
                             </ul>
@@ -235,7 +241,7 @@
                                 </li>
                             </ul>
                         
-                            <ul class="nav navbar-nav package-name-ul active">
+                            <ul class="nav navbar-nav package-name-ul active-package">
                                 <li>
                                     <!--Package Name-->
                                     
@@ -375,301 +381,304 @@
         </div>
         <!-- Main Content on the right-->
         <div class="col-sm-9 col-lg-10 content-wrapper main-wrapper">
-            <div id="content">
-                <h3 class="thin-text padding-bottom">
-                    <span class="bold">ballerina.util</span> package
-                </h3>
-                
-                    <div class="construct-wrapper">
-                        <!--Primitive Types-->
-                        
-                        <!-- Function -->
-                        
-                        <!-- Struct-binded functions grouped together -->
-                        
-                            <h4 id="Locale">
-                                <span class="fw-struct sm-icon"></span>
-                                public struct Locale
-                            </h4>
+            <div id="content" class="nano">
+                <div class="nano-content">
+                    <h3 class="thin-text padding-bottom">
+                        <span class="bold">ballerina.util</span>
+                        package
+                    </h3>
+                    
+                        <div class="construct-wrapper">
+                            <!--Primitive Types-->
                             
-                                <p>
-                                    <span class="fw-right gray xs-icon"></span>Locale struct represents specific geographical, political, or cultural region.
-                                </p>
+                            <!-- Function -->
                             
+                            <!-- Struct-binded functions grouped together -->
                             
-                                <p>
-                                    <label class="table-header-text">Fields:</label>
-                                </p>
-                                <table>
-                                    <tr>
-                                        <th class="col-md-4">Field Name</th>
-                                        <th class="col-md-2">Data Type</th>
-                                        <th class="col-md-6">Description</th>
-                                    </tr>
-                                    
+                                <h4 id="Locale">
+                                    <span class="fw-struct sm-icon"></span>
+                                    public struct Locale
+                                </h4>
+                                
+                                    <p>
+                                        <span class="fw-right gray xs-icon"></span>Locale struct represents specific geographical, political, or cultural region.
+                                    </p>
+                                
+                                
+                                    <p>
+                                        <label class="table-header-text">Fields:</label>
+                                    </p>
+                                    <table>
                                         <tr>
-                                            <td class="col-md-4">language</td>
-                                            <td class="col-md-2">string</td>
-                                            <td class="col-md-6">The language field for Locale</td>
+                                            <th class="col-md-4">Field Name</th>
+                                            <th class="col-md-2">Data Type</th>
+                                            <th class="col-md-6">Description</th>
                                         </tr>
+                                        
+                                            <tr>
+                                                <td class="col-md-4">language</td>
+                                                <td class="col-md-2">string</td>
+                                                <td class="col-md-6">The language field for Locale</td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td class="col-md-4">countryCode</td>
+                                                <td class="col-md-2">string</td>
+                                                <td class="col-md-6">The countryCode field for Locale</td>
+                                            </tr>
+                                        
+                                    </table>
+                                
+                                
+                            
+                            <!-- Connectors and its actions -->
+                            
+                            <!-- Enums-->
+                            
+                            <!-- Annotations-->
+                            
+                            <!-- Global Variables-->
+                            
+                        </div>
+                    
+                        <div class="construct-wrapper">
+                            <!--Primitive Types-->
+                            
+                            <!-- Function -->
+                            
+                                <h4 id="base16ToBase64Encode">
+                                    <span class="fw-function sm-icon"> </span>
+                                    public function base16ToBase64Encode
+                                    ( string baseString )
                                     
+                                    ( string )
+                                    
+                                </h4>
+                                
+                                    <p>
+                                        <span class="fw-right gray xs-icon"></span>Encodes a base16 encoded string to base64 encoding.
+                                    </p>
+                                
+                                
+                                    <p>
+                                        <label class="table-header-text">Parameters:</label>
+                                    </p>
+                                    <table>
                                         <tr>
-                                            <td class="col-md-4">countryCode</td>
-                                            <td class="col-md-2">string</td>
-                                            <td class="col-md-6">The countryCode field for Locale</td>
+                                            <th class="col-md-4">Parameter Name</th>
+                                            <th class="col-md-2">Data Type</th>
+                                            <th class="col-md-6">Description</th>
                                         </tr>
-                                    
-                                </table>
-                            
-                            
-                        
-                        <!-- Connectors and its actions -->
-                        
-                        <!-- Enums-->
-                        
-                        <!-- Annotations-->
-                        
-                        <!-- Global Variables-->
-                        
-                    </div>
-                
-                    <div class="construct-wrapper">
-                        <!--Primitive Types-->
-                        
-                        <!-- Function -->
-                        
-                            <h4 id="base16ToBase64Encode">
-                                <span class="fw-function sm-icon"> </span>
-                                public function base16ToBase64Encode
-                                ( string baseString )
+                                        
+                                            <tr>
+                                                <td class="col-md-4">baseString</td>
+                                                <td class="col-md-2">string</td>
+                                                <td class="col-md-6"></td>
+                                            </tr>
+                                        
+                                    </table>
                                 
-                                ( string )
                                 
-                            </h4>
                             
-                                <p>
-                                    <span class="fw-right gray xs-icon"></span>Encodes a base16 encoded string to base64 encoding.
-                                </p>
+                            <!-- Struct-binded functions grouped together -->
                             
+                            <!-- Connectors and its actions -->
                             
-                                <p>
-                                    <label class="table-header-text">Parameters:</label>
-                                </p>
-                                <table>
-                                    <tr>
-                                        <th class="col-md-4">Parameter Name</th>
-                                        <th class="col-md-2">Data Type</th>
-                                        <th class="col-md-6">Description</th>
-                                    </tr>
+                            <!-- Enums-->
+                            
+                            <!-- Annotations-->
+                            
+                            <!-- Global Variables-->
+                            
+                        </div>
+                    
+                        <div class="construct-wrapper">
+                            <!--Primitive Types-->
+                            
+                            <!-- Function -->
+                            
+                                <h4 id="base64Decode">
+                                    <span class="fw-function sm-icon"> </span>
+                                    public function base64Decode
+                                    ( string s )
                                     
+                                    ( string )
+                                    
+                                </h4>
+                                
+                                    <p>
+                                        <span class="fw-right gray xs-icon"></span>Decodes a base64 encoded string to base10.
+                                    </p>
+                                
+                                
+                                    <p>
+                                        <label class="table-header-text">Parameters:</label>
+                                    </p>
+                                    <table>
                                         <tr>
-                                            <td class="col-md-4">baseString</td>
-                                            <td class="col-md-2">string</td>
-                                            <td class="col-md-6"></td>
+                                            <th class="col-md-4">Parameter Name</th>
+                                            <th class="col-md-2">Data Type</th>
+                                            <th class="col-md-6">Description</th>
                                         </tr>
-                                    
-                                </table>
-                            
-                            
-                        
-                        <!-- Struct-binded functions grouped together -->
-                        
-                        <!-- Connectors and its actions -->
-                        
-                        <!-- Enums-->
-                        
-                        <!-- Annotations-->
-                        
-                        <!-- Global Variables-->
-                        
-                    </div>
-                
-                    <div class="construct-wrapper">
-                        <!--Primitive Types-->
-                        
-                        <!-- Function -->
-                        
-                            <h4 id="base64Decode">
-                                <span class="fw-function sm-icon"> </span>
-                                public function base64Decode
-                                ( string s )
+                                        
+                                            <tr>
+                                                <td class="col-md-4">s</td>
+                                                <td class="col-md-2">string</td>
+                                                <td class="col-md-6">string to be decoded</td>
+                                            </tr>
+                                        
+                                    </table>
                                 
-                                ( string )
                                 
-                            </h4>
                             
-                                <p>
-                                    <span class="fw-right gray xs-icon"></span>Decodes a base64 encoded string to base10.
-                                </p>
+                            <!-- Struct-binded functions grouped together -->
                             
+                            <!-- Connectors and its actions -->
                             
-                                <p>
-                                    <label class="table-header-text">Parameters:</label>
-                                </p>
-                                <table>
-                                    <tr>
-                                        <th class="col-md-4">Parameter Name</th>
-                                        <th class="col-md-2">Data Type</th>
-                                        <th class="col-md-6">Description</th>
-                                    </tr>
+                            <!-- Enums-->
+                            
+                            <!-- Annotations-->
+                            
+                            <!-- Global Variables-->
+                            
+                        </div>
+                    
+                        <div class="construct-wrapper">
+                            <!--Primitive Types-->
+                            
+                            <!-- Function -->
+                            
+                                <h4 id="base64Encode">
+                                    <span class="fw-function sm-icon"> </span>
+                                    public function base64Encode
+                                    ( string s )
                                     
+                                    ( string )
+                                    
+                                </h4>
+                                
+                                    <p>
+                                        <span class="fw-right gray xs-icon"></span>Encodes a base10 encoded string to base64.
+                                    </p>
+                                
+                                
+                                    <p>
+                                        <label class="table-header-text">Parameters:</label>
+                                    </p>
+                                    <table>
                                         <tr>
-                                            <td class="col-md-4">s</td>
-                                            <td class="col-md-2">string</td>
-                                            <td class="col-md-6">string to be decoded</td>
+                                            <th class="col-md-4">Parameter Name</th>
+                                            <th class="col-md-2">Data Type</th>
+                                            <th class="col-md-6">Description</th>
                                         </tr>
-                                    
-                                </table>
-                            
-                            
-                        
-                        <!-- Struct-binded functions grouped together -->
-                        
-                        <!-- Connectors and its actions -->
-                        
-                        <!-- Enums-->
-                        
-                        <!-- Annotations-->
-                        
-                        <!-- Global Variables-->
-                        
-                    </div>
-                
-                    <div class="construct-wrapper">
-                        <!--Primitive Types-->
-                        
-                        <!-- Function -->
-                        
-                            <h4 id="base64Encode">
-                                <span class="fw-function sm-icon"> </span>
-                                public function base64Encode
-                                ( string s )
+                                        
+                                            <tr>
+                                                <td class="col-md-4">s</td>
+                                                <td class="col-md-2">string</td>
+                                                <td class="col-md-6">string to be encoded</td>
+                                            </tr>
+                                        
+                                    </table>
                                 
-                                ( string )
                                 
-                            </h4>
                             
-                                <p>
-                                    <span class="fw-right gray xs-icon"></span>Encodes a base10 encoded string to base64.
-                                </p>
+                            <!-- Struct-binded functions grouped together -->
                             
+                            <!-- Connectors and its actions -->
                             
-                                <p>
-                                    <label class="table-header-text">Parameters:</label>
-                                </p>
-                                <table>
-                                    <tr>
-                                        <th class="col-md-4">Parameter Name</th>
-                                        <th class="col-md-2">Data Type</th>
-                                        <th class="col-md-6">Description</th>
-                                    </tr>
+                            <!-- Enums-->
+                            
+                            <!-- Annotations-->
+                            
+                            <!-- Global Variables-->
+                            
+                        </div>
+                    
+                        <div class="construct-wrapper">
+                            <!--Primitive Types-->
+                            
+                            <!-- Function -->
+                            
+                                <h4 id="base64ToBase16Encode">
+                                    <span class="fw-function sm-icon"> </span>
+                                    public function base64ToBase16Encode
+                                    ( string baseString )
                                     
+                                    ( string )
+                                    
+                                </h4>
+                                
+                                    <p>
+                                        <span class="fw-right gray xs-icon"></span>Encodes a base64 encoded string to base16 encoding.
+                                    </p>
+                                
+                                
+                                    <p>
+                                        <label class="table-header-text">Parameters:</label>
+                                    </p>
+                                    <table>
                                         <tr>
-                                            <td class="col-md-4">s</td>
-                                            <td class="col-md-2">string</td>
-                                            <td class="col-md-6">string to be encoded</td>
+                                            <th class="col-md-4">Parameter Name</th>
+                                            <th class="col-md-2">Data Type</th>
+                                            <th class="col-md-6">Description</th>
                                         </tr>
+                                        
+                                            <tr>
+                                                <td class="col-md-4">baseString</td>
+                                                <td class="col-md-2">string</td>
+                                                <td class="col-md-6"></td>
+                                            </tr>
+                                        
+                                    </table>
+                                
+                                
+                            
+                            <!-- Struct-binded functions grouped together -->
+                            
+                            <!-- Connectors and its actions -->
+                            
+                            <!-- Enums-->
+                            
+                            <!-- Annotations-->
+                            
+                            <!-- Global Variables-->
+                            
+                        </div>
+                    
+                        <div class="construct-wrapper">
+                            <!--Primitive Types-->
+                            
+                            <!-- Function -->
+                            
+                                <h4 id="uuid">
+                                    <span class="fw-function sm-icon"> </span>
+                                    public function uuid
+                                    (  )
                                     
-                                </table>
-                            
-                            
-                        
-                        <!-- Struct-binded functions grouped together -->
-                        
-                        <!-- Connectors and its actions -->
-                        
-                        <!-- Enums-->
-                        
-                        <!-- Annotations-->
-                        
-                        <!-- Global Variables-->
-                        
-                    </div>
-                
-                    <div class="construct-wrapper">
-                        <!--Primitive Types-->
-                        
-                        <!-- Function -->
-                        
-                            <h4 id="base64ToBase16Encode">
-                                <span class="fw-function sm-icon"> </span>
-                                public function base64ToBase16Encode
-                                ( string baseString )
-                                
-                                ( string )
-                                
-                            </h4>
-                            
-                                <p>
-                                    <span class="fw-right gray xs-icon"></span>Encodes a base64 encoded string to base16 encoding.
-                                </p>
-                            
-                            
-                                <p>
-                                    <label class="table-header-text">Parameters:</label>
-                                </p>
-                                <table>
-                                    <tr>
-                                        <th class="col-md-4">Parameter Name</th>
-                                        <th class="col-md-2">Data Type</th>
-                                        <th class="col-md-6">Description</th>
-                                    </tr>
+                                    ( string )
                                     
-                                        <tr>
-                                            <td class="col-md-4">baseString</td>
-                                            <td class="col-md-2">string</td>
-                                            <td class="col-md-6"></td>
-                                        </tr>
-                                    
-                                </table>
-                            
-                            
-                        
-                        <!-- Struct-binded functions grouped together -->
-                        
-                        <!-- Connectors and its actions -->
-                        
-                        <!-- Enums-->
-                        
-                        <!-- Annotations-->
-                        
-                        <!-- Global Variables-->
-                        
-                    </div>
-                
-                    <div class="construct-wrapper">
-                        <!--Primitive Types-->
-                        
-                        <!-- Function -->
-                        
-                            <h4 id="uuid">
-                                <span class="fw-function sm-icon"> </span>
-                                public function uuid
-                                (  )
+                                </h4>
                                 
-                                ( string )
+                                    <p>
+                                        <span class="fw-right gray xs-icon"></span>Returns a random UUID string
+                                    </p>
                                 
-                            </h4>
+                                
+                                
                             
-                                <p>
-                                    <span class="fw-right gray xs-icon"></span>Returns a random UUID string
-                                </p>
+                            <!-- Struct-binded functions grouped together -->
                             
+                            <!-- Connectors and its actions -->
                             
+                            <!-- Enums-->
                             
-                        
-                        <!-- Struct-binded functions grouped together -->
-                        
-                        <!-- Connectors and its actions -->
-                        
-                        <!-- Enums-->
-                        
-                        <!-- Annotations-->
-                        
-                        <!-- Global Variables-->
-                        
-                    </div>
-                
+                            <!-- Annotations-->
+                            
+                            <!-- Global Variables-->
+                            
+                        </div>
+                    
+                </div>
             </div>
         </div>
     </div>
